@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Contact Us-MEPL</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  
+<header>
+  <div class="logo">
+    <img src="images/logomanhit.png" alt="Company Logo" width="100">
+  </div>
+  <span class="hamburger" id="hamburger-menu" onclick="toggleMobileNav()">&#9776;</span> 
+  <nav>
+    <div class="nav-row">
+    <ul>
+      <li><a class='nav-link' href='index.html'>Home</a></li>
+      <li><a class='nav-link' href='about.html'>About</a></li>
+      <li><a class='nav-link' href='programs.html'>Courses</a></li>
+      <li><a class='nav-link' href='partners.html'>Partners</a></li>
+      <li><a class='nav-link' href='team.html'>Teams</a></li>
+      <li><a class='nav-link' href='jobs.html'>Placement</a></li>
+      <li><a class='nav-link' href='gallery.html'>Gallery</a></li>
+      <li><a class='nav-link' href='contact.html'>Contact</a></li>
+    </ul>
+    </div>
+  </nav>
+  
+</header>
+
+  <main>
+    <section class='content'>
+    <h2>Contact Us </h2>
+    <p>We’re here to help you take the next step in your career. Whether you have questions about our training programs, partnerships, or job opportunities, feel free to reach out. Our team is ready to assist you with personalized guidance and support.</p>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="contact-info">
+    <h3>Contact Information</h3>
+    <p><strong>Phone:</strong> +91-9210001575</p>
+    <p><strong>Email:</strong> manhitinfo@gmail.com</p>
+    <p><strong>Address:</strong> Office No.4, E-6, 3rd Floor, Kalkaji, New Delhi-110019 </p>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+    <h3>Send Us a Message</h3>
+    <form id="contact-form" action=" " method="POST">
+      <label for="name">Name: <span style="color: red;">*</span></label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email: <span style="color: red;">*</span></label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone: <span style="color: red;">*</span></label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="course">Course: <span style="color: red;">*</span></label>
+      <input type="text" id="course" name="course" required />
+
+      <label for="message">Message: <span style="color: red;">*</span></label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  
+   <!-- Map Section -->
+  <section class='map'>
+    <h3>Our Location</h3>
+    <p>Visit us at our training and corporate center for face-to-face assistance. We are located in a well-connected area, easily accessible via public transport.</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.69345747069!2d77.25663745!3d28.5461704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b0c3b1c7b9%3A0x7b5b5b5b5b5b5b5b!2sKalkaji%2C%20New%20Delhi%2C%20Delhi%20110019!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  </main>
+  
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/logofooter.png" alt="Company Logo" width="100">
+    </div>
+       <div class="footer-contact">
+        <h4>Contact Information</h4>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('address-info')">📍 Address <span class="arrow">▼</span></span>
+        <p id="address-info" class="hidden">Office No.4, E-6, 3rd Floor, Kalkaji, New Delhi-110019 </p>
+      </div>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('email-info')">📧 Email <span class="arrow">▼</span></span>
+        <p id="email-info" class="hidden">manhitinfo@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('phone-info')">📞 Phone <span class="arrow">▼</span></span>
+        <p id="phone-info" class="hidden">+91-9210001575</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul class="footer-quick-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Courses</a></li>
+       <li><a href="partners.html">Partners</a></li>    
+        <li><a href="team.html">Teams</a></li>
+        <li><a href="jobs.html">Placement</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Follow Us</h4>
+      <div class="footer-social-icons" style="display: flex; gap: 18px; align-items: center; margin-top: 8px;">
+        <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqbHo4UmJEVUdKZmNXc1VnMklRMDRWSXV0LTVSZ3xBQ3Jtc0trUnZiR3lJLU5udThfOEJJLUkzTi1pTXRQbVBURUhsbEJtM19uRHVWS0hMbU5RbGJuVkpTRmJ0cWNUTjM1el9mSHplQ05pdm85X3ZzMDZINlNrdGwwUlI3bml1elQ4clpmc0FwYTh3cGhhdjlHVlJtUQ&q=https%3A%2F%2Fwww.instagram.com%2Fmanhit_exim_pvt_ltd%3Figsh%3DYnI4ZmVscDEzaHY%3D" target="_blank" title="YouTube" style="color:#FF0000;font-size:22px;">
+          <i class="fab fa-youtube"></i><span>Youtube</span>
+        </a>
+        <a href="https://www.instagram.com/manhit_exim_pvt_ltd?igsh=MTBmYXAwampsb2ZkeA==" target="_blank" title="Instagram" style="color:#C13584;font-size:22px;">
+          <i class="fab fa-instagram"></i><span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/vikas.nager.259255/" target="_blank" title="Facebook" style="color:#1877F3;font-size:22px;">
+          <i class="fab fa-facebook"></i><span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Manhit%20Exim%20Pvt%20Ltd" target="_blank" title="LinkedIn" style="color:#0077B5;font-size:22px;">
+          <i class="fab fa-linkedin"></i><span>Linkedin</span>
+        </a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copyright">
+      &copy;2025 Manhit Exim Pvt Ltd. All rights reserved. 
+    </div>
+    <!-- <div class="footer-designed">
+      Designed by GYAN SINGH (<a href="mailto:gyansingh6047@gmail.com" style="color:inherit;text-decoration:underline;">gyansingh6047@gmail.com</a>)
+    </div> -->
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+  <script >
+   document.getElementById('contact-form').onsubmit = async function(e) {
+  e.preventDefault();
+  const data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    course: document.getElementById('course').value,
+    message: document.getElementById('message').value
+  };
+try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      });
+      const result = await res.json();
+      if (result.success) {
+        alert('Message sent! We will contact you soon.');
+        e.target.reset();
+      } else {
+        alert('Failed to send. Please try again later.');
+      }
+    } catch (error) {
+      alert('An error occurred. Please check your internet connection or try again later.');
+    }
+  };
+
+    function toggleInfo(id) {
+    const info = document.getElementById(id);
+    if (info.classList.contains('hidden')) {
+      info.classList.remove('hidden');
+    } else {
+      info.classList.add('hidden');
+    }
+  }
+  </script>
+</body>
+</html>

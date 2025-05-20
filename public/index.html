@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>MEPL</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel='stylesheet' href='style.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  
+<header>
+   <div class="logo">
+    <img src="images/logomanhit.png" alt="Company Logo" width="100">
+   </div>
+  <span class="hamburger" id="hamburger-menu" onclick="toggleMobileNav()">&#9776;</span> 
+  <nav>
+      <div class="nav-row">
+    <ul>
+      <li><a class='nav-link' href='index.html'>Home</a></li>
+      <li><a class='nav-link' href='about.html'>About</a></li>
+      <li><a class='nav-link' href='programs.html'>Courses</a></li>
+      <li><a class='nav-link' href='partners.html'>Partners</a></li>
+      <li><a class='nav-link' href='team.html'>Teams</a></li>
+      <li><a class='nav-link' href='jobs.html'>Placement</a></li>
+      <li><a class='nav-link' href='gallery.html'>Gallery</a></li>
+      <li><a class='nav-link' href='contact.html'>Contact</a></li>
+    </ul>
+    <div class="header-icons">
+ <span id="header-search-icon" onclick="toggleHeaderSearch()" title="Search">
+    <i class="fas fa-search"></i>
+  </span>
+  <!-- Search Form (hidden by default, appears when icon is clicked) -->
+  <form id="header-search-form" onsubmit="return handleSiteSearch(event)">
+    <input type="text" id="site-search-input" placeholder="Search" required>
+    <button type="submit">
+      <i class="fas fa-search"></i>
+    </button>
+    <button type="button" id="header-search-close" onclick="toggleHeaderSearch()"> 
+    </button>
+  </form>  
+
+    <div class="register-box" onclick="openModal('register')" title="Register">
+  <!-- <i class="fas fa-user-plus"></i> -->
+   Register
+</div>
+ <div class="login-box" onclick="openModal('logn')" title="Login">
+  <!-- <i class="fas fa-sign-in-alt"></i>  -->
+  Login
+</div>
+</div>
+    </div>
+  </nav>
+  
+</header>
+
+
+
+<!-- Registration Modal -->
+<div class="modal-bg" id="register-modal">
+  <div class="modal-box">
+    <span class="modal-close" onclick="closeModal('register')">&times;</span>
+    <h3>Register</h3>
+    <form id="register-form">
+      <label for="reg-name">Name:</label>
+      <input type="text" id="reg-name" required />
+      <label for="reg-email">Email ID:</label>
+      <input type="email" id="reg-email" required />
+      <label for="reg-phone">Phone Number:</label>
+      <input type="tel" id="reg-phone" required />
+      <label for="reg-password">Password:</label>
+      <input type="password" id="reg-password" required />
+      <label for="reg-cpassword">Confirm Password:</label>
+      <input type="password" id="reg-cpassword" required />
+      <button type="submit">Register</button>
+      <span class="modal-switch-link" onclick="switchModal('register','login')">Already have an account? Login</span>
+      <span class="modal-switch-link" onclick="switchModal('register','forgot')">Forgot Password?</span>
+    </form>
+  </div>
+</div>
+<!-- Login Modal -->
+<div class="modal-bg" id="login-modal">
+  <div class="modal-box">
+    <span class="modal-close" onclick="closeModal('login')">&times;</span>
+    <h3>Login</h3>
+    <form id="login-form">
+      <label for="login-email">Email or Phone Number:</label>
+      <input type="text" id="login-email" required />
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" required />
+      <button type="submit">Login</button>
+      <span class="modal-switch-link" onclick="switchModal('login','register')">New user? Register</span>
+      <span class="modal-switch-link forgot-link" onclick="switchModal('login','forgot')">Forgot Password?</span>
+    </form>
+  </div>
+</div>
+<!-- Forgot Password Modal -->
+<div class="modal-bg" id="forgot-modal">
+  <div class="modal-box">
+    <span class="modal-close" onclick="closeModal('forgot')">&times;</span>
+    <h3>Forgot Password</h3>
+    <form id="forgot-form">
+      <label for="forgot-email">Email:</label>
+      <input type="email" id="forgot-email" required />
+      <button type="submit">Send Verification Email</button>
+      <span class="modal-switch-link" onclick="switchModal('forgot','login')">Back to Login</span>
+    </form>
+  </div>
+</div>
+
+  <main>
+   <section class='content'>
+  <div class="welcome-slider">
+    <div class="welcome-slide active">
+      <img src="images/explore.jpg" alt="Welcome to Manhit Exim Pvt. Ltd." />
+      <div class="welcome-info-box">
+        <h2>Empower Your Future With Us</h2>
+        <p>
+          Manhit Exim Pvt. Ltd. is a dynamic organization committed to equipping individuals with practical, industry-aligned skills through expert-led training and development programs.
+        </p>
+      </div>
+      <button class="welcome-slide-btn" onclick="location.href='about.html'">Learn More</button>
+    </div>
+    <div class="welcome-slide">
+      <img src="images/skill1.jpg" alt="Skill Development" />
+      <div class="welcome-info-box">
+        <h2>Skill Development</h2>
+        <p>
+          We actively participate in government-sponsored skill development missions and social upliftment projects, ensuring that our training remains accessible and impactful for all.
+        </p>
+      </div>
+      <button class="welcome-slide-btn" onclick="location.href='programs.html'">Our Programs</button>
+    </div>
+    <div class="welcome-slide">
+      <img src="images/background.jpg" alt="Export Import Training" />
+      <div class="welcome-info-box">
+        <h2> Vocational Training</h2>
+        <p>
+          With a strong foundation in export-import operations, recruitment services, and vocational education, we provide real-world exposure, hands-on learning, and career-ready certifications.
+        </p>
+      </div>
+      <button class="welcome-slide-btn" onclick="location.href='gallery.html'">Our Partners</button>
+    </div>
+    <button class="welcome-prev" onclick="moveWelcomeSlide(-1)">&#10094;</button>
+    <button class="welcome-next" onclick="moveWelcomeSlide(1)">&#10095;</button>
+  </div>
+</section>
+    <!-- Courses Section -->
+  <section class="courses">
+    <h2>Our Courses</h2>
+    <img src="images/courses1.jpg" alt="Courses" >
+   <p>we offer practical, job-oriented training programs designed to build real-world skills that lead to employment. Our expert-crafted courses in Export-Import, Logistics, Retail, Office Management, Digital Marketing, and Soft Skills focus on hands-on learning and industry relevance.
+
+Each program is designed to make you job-ready through practical sessions, real case studies, and placement support. Whether you're starting your career or upskilling for better opportunities, our training ensures you gain the technical and personal skills needed to succeed in today’s competitive job market.
+
+With a strong track record of successful placements and professional growth, Manhit Exim Pvt. Ltd. is your trusted partner for skill development and career advancement.</p> 
+   <button onclick="location.href='programs.html'">Explore Courses</button>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners">
+    <h2>Our Partners</h2>
+    <div class="partner-list">
+      <div class="partner">
+        <img src="images/skill.jpg" alt="SIDH" width="100">
+        <h4>SIDH</h4>
+        <p>Empowering youth with skills for a better future.</p>
+      </div>
+      <div class="partner">
+        <img src="images/PMKVY.jpeg" alt="PMKVY" width="100">
+        <h4>PMKVY</h4>
+        <p>A Government of India initiative to train over 40 crore people in different skills.</p>
+      </div>
+      <div class="partner">
+        <img src="images/ddugky.jpeg" alt="DDU-GKY" width="100">
+        <h4>DDU-GKY</h4>
+        <p>Facilitates skill development across India through public-private partnerships.</p>
+      </div>
+      <div class="partner">
+        <img src="images/asdm.jpeg" alt="ASDUM" width="100">
+        <h4>ASDUM</h4>
+        <p>Works to improve the lives of children and their families worldwide.</p>
+      </div>
+      <div class="partner">
+        <img src="images/mapcet.jpeg" alt="MAPCET" width="100">
+        <h4>MAPCET</h4>
+        <p>Dedicated to global health and well-being.</p>
+      </div>
+    <button class="partner-btn" onclick="location.href='partners.html'">Click Here </button>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+     <h2>Placement (Rozgar Mela)</h2>
+    <img src="images/placement.jpg" alt="Placement" >
+   
+    <p>
+   we organize Rozgar Melas to directly connect job-ready candidates with leading employers through on-the-spot interviews and hiring opportunities. These employment fairs bridge the gap between skilled talent and industry needs, making the hiring process faster and more effective. With resume support, interview preparation, and access to real job openings, our Rozgar Melas serve as powerful platforms for immediate employment and career growth.
+   </p>
+    <button onclick="location.href='jobs.html'">Apply Now...</button>
+  </section>
+  </main>
+  
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/logofooter.png" alt="Company Logo" width="100">
+    </div>
+      <div class="footer-contact">
+        <h4>Contact Information</h4>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('address-info')">📍 Address <span class="arrow">▼</span></span>
+        <p id="address-info" class="hidden">Office No.4, E-6, 3rd Floor, Kalkaji, New Delhi-110019 </p>
+      </div>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('email-info')">📧 Email <span class="arrow">▼</span></span>
+        <p id="email-info" class="hidden">manhitinfo@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('phone-info')">📞 Phone <span class="arrow">▼</span></span>
+        <p id="phone-info" class="hidden">+91-9210001575</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul class="footer-quick-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Courses</a></li>
+       <li><a href="partners.html">Partners</a></li>    
+        <li><a href="team.html">Teams</a></li>
+        <li><a href="jobs.html">Placement</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Follow Us</h4>
+      <div class="footer-social-icons" style="display: flex; gap: 18px; align-items: center; margin-top: 8px;">
+        <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqbHo4UmJEVUdKZmNXc1VnMklRMDRWSXV0LTVSZ3xBQ3Jtc0trUnZiR3lJLU5udThfOEJJLUkzTi1pTXRQbVBURUhsbEJtM19uRHVWS0hMbU5RbGJuVkpTRmJ0cWNUTjM1el9mSHplQ05pdm85X3ZzMDZINlNrdGwwUlI3bml1elQ4clpmc0FwYTh3cGhhdjlHVlJtUQ&q=https%3A%2F%2Fwww.instagram.com%2Fmanhit_exim_pvt_ltd%3Figsh%3DYnI4ZmVscDEzaHY%3D" target="_blank" title="YouTube" style="color:#FF0000;font-size:22px;">
+          <i class="fab fa-youtube"></i><span>YouTube</span>
+        </a>
+        <a href="https://www.instagram.com/manhit_exim_pvt_ltd?igsh=MTBmYXAwampsb2ZkeA==" target="_blank" title="Instagram" style="color:#C13584;font-size:22px;">
+          <i class="fab fa-instagram"></i><span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/vikas.nager.259255/" target="_blank" title="Facebook" style="color:#1877F3;font-size:22px;">
+          <i class="fab fa-facebook"></i><span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Manhit%20Exim%20Pvt%20Ltd" target="_blank" title="LinkedIn" style="color:#0077B5;font-size:22px;">
+          <i class="fab fa-linkedin"></i><span>Linkedin</span>
+        </a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copyright">
+      &copy; 2025 Manhit Exim Pvt Ltd. All rights reserved. 
+    </div>
+  </div>
+  <div class="footer-bottom">
+  <div class="footer-designed">
+      Designed by GYAN SINGH (<a href="mailto:gyansingh6047@gmail.com" style="color:inherit;text-decoration:underline;">gyansingh6047@gmail.com</a>)
+    </div>
+  </div>
+</footer>
+
+<script src="server.js"></script>
+<script src="script.js"></script>
+
+<script >
+function handleSiteSearch(e) {
+  e.preventDefault();
+  const query = document.getElementById('site-search-input').value.trim().toLowerCase();
+
+  // List all selectors you want to filter on every page
+  const selectors = [
+    '.welcome-slide',
+    '.course-box',
+    '.partner',
+    '.project', // if you use .project for projects
+    '.gallery-item',
+    '.job-box',
+    '.team-table tr', // for team page
+    '.footer-links li', // for quick links
+    // add more as needed for your site
+  ];
+
+  let found = false;
+
+  selectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(item => {
+      // For table rows, skip header row
+      if (item.querySelector('th')) return;
+      const text = item.textContent.toLowerCase();
+      if (query && text.includes(query)) {
+        item.style.display = '';
+        found = true;
+      } else if (query) {
+        item.style.display = 'none';
+      } else {
+        item.style.display = '';
+      }
+    });
+  });
+
+  // Optionally, show a "No results" message if nothing found
+  let noResults = document.getElementById('no-search-results');
+  if (!found && query) {
+    if (!noResults) {
+      noResults = document.createElement('div');
+      noResults.id = 'no-search-results';
+      noResults.textContent = 'No results found.';
+      noResults.style.color = '#b00';
+      noResults.style.textAlign = 'center';
+      noResults.style.margin = '24px 0';
+      // Try to append to main, fallback to body
+      (document.querySelector('main') || document.body).appendChild(noResults);
+    }
+  } else if (noResults) {
+    noResults.remove();
+  }
+  return false;
+}
+  
+// document.getElementById('hamburger-menu').onclick = function(e) {
+//   e.stopPropagation();
+//   var navRow = document.querySelector('.nav-row');
+//   navRow.classList.toggle('show');
+// };
+// // Optional: close menu when clicking outside
+// document.addEventListener('click', function(e) {
+//   var navRow = document.querySelector('.nav-row');
+//   if (navRow && navRow.classList.contains('show') && !e.target.closest('.nav-row')) {
+//     navRow.classList.remove('show');
+//   }
+// });
+
+function toggleHeaderSearch() {
+  const form = document.getElementById('header-search-form');
+  const searchIcon = document.getElementById('header-search-icon');
+  if (form.style.display === 'none' || form.style.display === '') {
+    form.style.display = 'flex';
+    form.querySelector('input').focus();
+    searchIcon.style.display = 'none';
+    // Remove any previous "No results" message
+    const noResults = document.getElementById('no-search-results');
+    if (noResults) noResults.remove();
+  } else {
+    form.style.display = 'none';
+    searchIcon.style.display = '';
+    const noResults = document.getElementById('no-search-results');
+    if (noResults) noResults.remove();
+    form.reset();
+    // Show all items again when search is closed
+    const selectors = [
+      '.welcome-slide',
+      '.course-box',
+      '.partner',
+      '.project',
+      '.gallery-item',
+      '.job-box',
+      '.team-table tr',
+      '.footer-links li'
+    ];
+    selectors.forEach(selector => {
+      document.querySelectorAll(selector).forEach(item => {
+        item.style.display = '';
+      });
+    });
+  }
+}
+
+// Optional: Hide search bar if clicked outside
+document.addEventListener('click', function(e) {
+  const form = document.getElementById('header-search-form');
+  const searchIcon = document.getElementById('header-search-icon');
+  if (
+    form.style.display === 'flex' &&
+    !form.contains(e.target) &&
+    e.target !== searchIcon
+  ) {
+    toggleHeaderSearch();
+  }
+});
+
+
+let welcomeSlideIndex = 0;
+const welcomeSlides = document.querySelectorAll('.welcome-slide');
+function showWelcomeSlide(idx) {
+  welcomeSlides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === idx);
+  });
+}
+function moveWelcomeSlide(n) {
+  welcomeSlideIndex += n;
+  if (welcomeSlideIndex >= welcomeSlides.length) welcomeSlideIndex = 0;
+  if (welcomeSlideIndex < 0) welcomeSlideIndex = welcomeSlides.length - 1;
+  showWelcomeSlide(welcomeSlideIndex);
+}
+// Initialize
+showWelcomeSlide(welcomeSlideIndex);
+
+document.querySelectorAll('.partner').forEach(function(box) {
+    box.addEventListener('click', function() {
+      // If already active, remove active (toggle off)
+      if (box.classList.contains('active')) {
+        box.classList.remove('active');
+      } else {
+        // Remove 'active' from all
+        document.querySelectorAll('.partner').forEach(p => p.classList.remove('active'));
+        // Add 'active' to clicked
+        box.classList.add('active');
+      }
+    });
+    // For touch devices (optional, but click covers most cases)
+    box.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      box.click();
+    });
+  });
+function toggleInfo(id) {
+    const info = document.getElementById(id);
+    if (info.classList.contains('hidden')) {
+      info.classList.remove('hidden');
+    } else {
+      info.classList.add('hidden');
+    }
+  }
+  // Modal logic
+function openModal(type) {
+  document.getElementById(type + '-modal').classList.add('active');
+}
+function closeModal(type) {
+  document.getElementById(type + '-modal').classList.remove('active');
+}
+function switchModal(from, to) {
+  closeModal(from);
+  openModal(to);
+}
+
+// Simulated authentication (for demo only, not secure)
+function isLoggedIn() {
+  return localStorage.getItem('manhit_logged_in') === 'true';
+}
+function showMainIfLoggedIn() {
+  if (isLoggedIn()) {
+    document.getElementById('main-content').classList.remove('hidden');
+  } else {
+    document.getElementById('main-content').classList.add('hidden');
+    openModal('login');
+  }
+}
+showMainIfLoggedIn();
+
+// Registration logic (demo, no backend)
+document.getElementById('register-form').onsubmit =async function(e) {
+  e.preventDefault();
+  const name = document.getElementById('reg-name').value.trim();
+  const email = document.getElementById('reg-email').value.trim();
+  const phone = document.getElementById('reg-phone').value.trim();
+  const pass = document.getElementById('reg-password').value;
+  const cpass = document.getElementById('reg-cpassword').value;
+  if (pass !== cpass) {
+    alert('Passwords do not match!');
+    return;
+  }
+  try {
+    const res = await fetch('/api/register', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ name, email, phone, password: pass })
+    });
+    const result = await res.json();
+    if (result.success) {
+      alert('Registration successful! Please check your email for confirmation.');
+      closeModal('register');
+      openModal('login');
+    } 
+    else if (result.error && result.error.includes('already registered')) {
+      alert('This email or phone number is already registered. Please login.');
+      closeModal('register');
+      openModal('login');
+    }
+    else {
+      alert(result.error || 'Registration failed.');
+    }
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+};
+
+// Login logic (demo, no backend)
+document.getElementById('login-form').onsubmit =async function(e) {
+  e.preventDefault();
+  const user = JSON.parse(localStorage.getItem('manhit_user') || '{}');
+  const loginVal = document.getElementById('login-email').value.trim();
+  const pass = document.getElementById('login-password').value;
+  try {
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ login: loginVal, password: pass })
+    });
+    const result = await res.json();
+    if (result.success) {
+      localStorage.setItem('manhit_logged_in', 'true');
+      closeModal('login');
+      showMainIfLoggedIn();
+      // Optionally, show login alert email sent
+    } else {
+      alert(result.error || 'Invalid credentials!');
+    }
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+};
+
+// Forgot password logic (demo, no backend/email)
+document.getElementById('forgot-form').onsubmit =async function(e) {
+  e.preventDefault();
+  const email = document.getElementById('forgot-email').value.trim();
+  try {
+    const res = await fetch('/api/forgot-password', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ email })
+    });
+    const result = await res.json();
+    if (result.success) {
+      alert('A password reset email has been sent. Please check your inbox.');
+      closeModal('forgot');
+      openModal('login');
+    } else {
+      alert(result.error || 'Failed to send reset email.');
+    }
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+};
+
+// Prevent access to main content if not logged in
+window.addEventListener('DOMContentLoaded', function() {
+  showMainIfLoggedIn();
+});
+
+
+  </script>
+</body>
+</html>

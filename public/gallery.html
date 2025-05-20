@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Gallery-MEPL</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  
+<header>
+  <div class="logo">
+    <img src="images/logomanhit.png" alt="Company Logo" width="100">
+  </div>
+  <span class="hamburger" id="hamburger-menu" onclick="toggleMobileNav()">&#9776;</span> 
+  <nav>
+    <div class="nav-row">
+    <ul>
+      <li><a class='nav-link' href='index.html'>Home</a></li>
+      <li><a class='nav-link' href='about.html'>About</a></li>
+      <li><a class='nav-link' href='programs.html'>Courses</a></li>
+      <li><a class='nav-link' href='partners.html'>Partners</a></li>
+      <li><a class='nav-link' href='team.html'>Teams</a></li>
+      <li><a class='nav-link' href='jobs.html'>Placement</a></li>
+      <li><a class='nav-link' href='gallery.html'>Gallery</a></li>
+      <li><a class='nav-link' href='contact.html'>Contact</a></li>
+    </ul>
+    </div>
+  </nav>
+  
+</header>
+
+  <main>
+  <section class='content'>
+    <h2>Gallery</h2>
+    <p>
+  Welcome to our gallery! Here you can explore a visual journey through Manhit Exim Pvt. Ltd.'s vibrant activities and achievements. Browse photos of our modern centres' infrastructure, dynamic training sessions, and memorable moments from certificate distributions and placement drives. Each image reflects our commitment to quality, growth, and the success of our students and partners.
+</p>
+  </section>
+
+  <!-- Centres Infrastructure Section -->
+  <section class="gallery-section">
+    <h3>Centres Infrastructure</h3>
+    <p>Our centres are equipped with state-of-the-art infrastructure designed to foster an engaging and productive learning environment. Each facility features modern classrooms, advanced computer labs, and comfortable study areas, ensuring students have access to the latest technology and resources. The infrastructure is thoughtfully planned to support a wide range of training programs and skill development activities, providing a safe, accessible, and inspiring space for both students and instructors. This commitment to quality infrastructure reflects our dedication to delivering exceptional education and empowering our learners for future success.</p>
+    <div class="gallery-item">
+      <img src="images/infrastructure.jpeg" alt="Centre Infrastructure" width="300">
+      <button onclick="showMorePhotos('centres')">See More Photos</button>
+    </div>
+    <div id="centres-photos" class="hidden">
+      <img src="images/infrastructure1.jpeg" alt="Centre Infrastructure">
+      <img src="images/infrastructure2.jpeg" alt="Centre Infrastructure">
+      <img src="images/infrastructure3.jpeg" alt="Centre Infrastructure">
+      <img src="images/infrastructure4.jpeg" alt="Centre Infrastructure">
+      <img src="images/infrastructure5.jpeg" alt="Centre Infrastructure">
+    </div>
+  </section>
+
+  <!-- Mobility Images Section -->
+  <section class="gallery-section">
+    <h3>Training Images</h3>
+    <p>Our training programs are designed to equip students with practical skills and industry-relevant knowledge through hands-on sessions and interactive learning. Experienced instructors guide participants in both theoretical concepts and real-world applications, ensuring a comprehensive understanding of each subject. The training environment encourages active participation, collaboration, and continuous improvement, helping students build confidence and competence for their future careers.
+
+The figures shown below highlight various moments from our training sessions, capturing the dynamic and engaging atmosphere that defines our approach to skill development.</p>
+    <div class="gallery-item">
+      <img src="images/training.jpeg" alt="Mobility Image" width="300">
+      <button onclick="showMorePhotos('mobility')">See More Photos</button>
+    </div>
+    <div id="mobility-photos" class="hidden">
+      <img src="images/training1.jpeg" alt="Mobility Image">
+      <img src="images/training2.jpeg" alt="Mobility Image">
+      <img src="images/training3.jpeg" alt="Mobility Image">
+      <img src="images/training4.jpeg" alt="Mobility Image">
+      <img src="images/training5.jpeg" alt="Mobility Image">
+      <img src="images/training6.jpeg" alt="Mobility Image">
+      <!-- Add more images as needed -->
+    </div>
+  </section>
+
+  <!-- Social Media Images Section -->
+  <section class="gallery-section">
+    <h3>Placements & Certificate Distribution Images</h3>
+    <p>Placement drives and certificate distribution ceremonies are significant milestones at Manhit Exim Pvt. Ltd. These events celebrate the achievements of our students and mark the successful completion of their training programs. Certificate distribution not only recognizes the hard work and dedication of our learners but also boosts their confidence as they step into the professional world. Placement drives provide students with valuable opportunities to connect with industry partners and secure rewarding careers. The images below capture these memorable moments, reflecting our commitment to student success and our ongoing efforts to empower individuals through quality education and skill development.</p>
+    <div class="gallery-item">
+      <img src="images/certificate.jpeg" alt="Social Media Image" width="300">
+      <button onclick="showMorePhotos('social')">See More Photos</button>
+    </div>
+    <div id="social-photos" class="hidden">
+      <img src="images/certificate1.jpeg" alt="Social Media Image">
+      <img src="images/certificate2.jpeg" alt="Social Media Image">
+      <img src="images/rozgar1.jpeg" alt="Social Media Image">
+      <img src="images/rozgar2.jpeg" alt="Social Media Image">
+      
+    </div>
+  </section>
+
+  
+</main>
+  
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/logofooter.png" alt="Company Logo" width="100">
+    </div>
+       <div class="footer-contact">
+        <h4>Contact Information</h4>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('address-info')">📍 Address <span class="arrow">▼</span></span>
+        <p id="address-info" class="hidden">Office No.4, E-6, 3rd Floor, Kalkaji, New Delhi-110019 </p>
+      </div>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('email-info')">📧 Email <span class="arrow">▼</span></span>
+        <p id="email-info" class="hidden">manhitinfo@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <span class="footer-icon" onclick="toggleInfo('phone-info')">📞 Phone <span class="arrow">▼</span></span>
+        <p id="phone-info" class="hidden">+91-9210001575</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul class="footer-quick-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Courses</a></li>
+       <li><a href="partners.html">Partners</a></li>     
+        <li><a href="team.html">Teams</a></li>
+        <li><a href="jobs.html">Placement</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Follow Us</h4>
+      <div class="footer-social-icons" style="display: flex; gap: 18px; align-items: center; margin-top: 8px;">
+        <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqbHo4UmJEVUdKZmNXc1VnMklRMDRWSXV0LTVSZ3xBQ3Jtc0trUnZiR3lJLU5udThfOEJJLUkzTi1pTXRQbVBURUhsbEJtM19uRHVWS0hMbU5RbGJuVkpTRmJ0cWNUTjM1el9mSHplQ05pdm85X3ZzMDZINlNrdGwwUlI3bml1elQ4clpmc0FwYTh3cGhhdjlHVlJtUQ&q=https%3A%2F%2Fwww.instagram.com%2Fmanhit_exim_pvt_ltd%3Figsh%3DYnI4ZmVscDEzaHY%3D" target="_blank" title="YouTube" style="color:#FF0000;font-size:22px;">
+          <i class="fab fa-youtube"></i><span>Yotube</span>
+        </a>
+        <a href="https://www.instagram.com/manhit_exim_pvt_ltd?igsh=MTBmYXAwampsb2ZkeA==" target="_blank" title="Instagram" style="color:#C13584;font-size:22px;">
+          <i class="fab fa-instagram"></i><span>instagram</span>
+        </a>
+        <a href="https://www.facebook.com/vikas.nager.259255/" target="_blank" title="Facebook" style="color:#1877F3;font-size:22px;">
+          <i class="fab fa-facebook"></i><span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Manhit%20Exim%20Pvt%20Ltd" target="_blank" title="LinkedIn" style="color:#0077B5;font-size:22px;">
+          <i class="fab fa-linkedin"></i><span>Linkedin</span>
+        </a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copyright">
+      &copy; 2025 Manhit Exim Pvt Ltd. All rights reserved.
+    </div>
+    <!-- <div class="footer-designed">
+      Designed by GYAN SINGH (<a href="mailto:gyansingh6047@gmail.com" style="color:inherit;text-decoration:underline;">gyansingh6047@gmail.com</a>)
+    </div> -->
+  </div>
+</footer>
+
+<script src="server.js"></script>
+<script src="script.js"></script>
+
+  <script >
+    function toggleInfo(id) {
+    const info = document.getElementById(id);
+    if (info.classList.contains('hidden')) {
+      info.classList.remove('hidden');
+    } else {
+      info.classList.add('hidden');
+    }
+  }
+
+  function showMorePhotos(section) {
+    const photosDiv = document.getElementById(`${section}-photos`);
+    if (photosDiv.classList.contains('hidden')) {
+      photosDiv.classList.remove('hidden');
+    } else {
+      photosDiv.classList.add('hidden');
+    }
+  }
+</script>
+</body>
+</html>
