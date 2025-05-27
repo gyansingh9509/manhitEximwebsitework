@@ -6,38 +6,129 @@
   <title>Our Courses-MEPL</title>
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel='stylesheet' href='style.css'>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
   
-<header>
-  <div class="logo">
-    <img src="images/logomanhit.png" alt="Company Logo" width="100">
-  </div>
-  <span class="hamburger" id="hamburger-menu" onclick="toggleMobileNav()">&#9776;</span> 
-  <nav>
-    <div class="nav-row">
-    <ul>
-      <li><a class='nav-link' href='index.html'>Home</a></li>
-      <li><a class='nav-link' href='about.html'>About</a></li>
-      <li><a class='nav-link' href='programs.html'>Courses</a></li>
-      <li><a class='nav-link' href='partners.html'>Partners</a></li>
-      <li><a class='nav-link' href='team.html'>Teams</a></li>
-      <li><a class='nav-link' href='jobs.html'>Placement</a></li>
-      <li><a class='nav-link' href='gallery.html'>Gallery</a></li>
-      <li><a class='nav-link' href='contact.html'>Contact</a></li>
-    </ul>
-    </div>
-  </nav>
+<!-- ===== Bootstrap Navbar with Drawer Menu ===== -->
+<header class="custom-header navbar navbar-expand-lg navbar-dark bg-custom">
+  <!-- Top Bar -->
   
+  <!-- Logo and Company Name Section -->
+  <div class="logo-section">
+    <div class="logo">
+      <img src="images/logomanhit1.png" alt="Company Logo">
+    </div>
+    <div class="company-name">
+      <h1>Manhit Exim Pvt. Ltd.</h1>
+      <p>(Innovate Educate Elevate)</p>
+    </div>
+    <div class="partner-logos">
+       <a href="partners" target="_blank">
+      <img src="images/PMKVY.jpeg" alt="PMKVY Logo">
+      </a>
+       <a href="partners" target="_blank">
+      <img src="images/skill.jpg" alt="Skill India Logo">
+      </a>
+    </div>
+  </div>
+  <!-- Main Navbar -->
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- Hamburger Icon for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about">About</a></li>
+            <li><a class="dropdown-item" href="about">Vision & Mission</a></li>
+            <li><a class="dropdown-item" href="about">Objectives</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="programs" data-bs-toggle="dropdown">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="programs">Apparel</a></li>
+            <li><a class="dropdown-item" href="programs">Beauty & Wellness</a></li>
+            <li><a class="dropdown-item" href="programs">Construction</a></li>
+            <li><a class="dropdown-item" href="programs">Sports</a></li>
+            <li><a class="dropdown-item" href="programs">Handicraft & Carpet</a></li>
+            <li><a class="dropdown-item" href="programs">Retail</a></li>
+            <li><a class="dropdown-item" href="programs">Bankin & Accounting</a></li>
+            <li><a class="dropdown-item" href="programs">Healthcare</a></li>
+            <li><a class="dropdown-item" href="programs">Electrical</a></li>
+            <li><a class="dropdown-item" href="programs">Electronic</a></li>
+            <li><a class="dropdown-item" href="programs">Green Jobs</a></li>
+            <li><a class="dropdown-item" href="programs">Tourism & Hospitality</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="partners" data-bs-toggle="dropdown">Partners</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="partners">National</a></li>
+            <li><a class="dropdown-item" href="partners">International</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" data-bs-toggle="dropdown">Teams</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="team">Trainers</a></li>
+            <li><a class="dropdown-item" href="team">Managers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="jobs" data-bs-toggle="dropdown">Placement</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="jobs">Openings</a></li>
+            <li><a class="dropdown-item" href="jobs">Internships</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="gallery" data-bs-toggle="dropdown">Gallery</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="gallery">Infrastructure Images</a></li>
+            <li><a class="dropdown-item" href="gallery">Training Images</a></li>
+            <li><a class="dropdown-item" href="gallery">Placement Images</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="contact" data-bs-toggle="dropdown">Contact</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact">Contact Form</a></li>
+            <li><a class="dropdown-item" href="contact">Map</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      
+      </div>
+    </div>
+  </div>
 </header>
 
-  <main>
-    <section class='content'>
-    <h2>Our Courses</h2>
-    <img src="images/courses.jpeg" alt="Courses" class="course-logo">
-    <p>We  offers job-focused training programs that build real-world skills for employment. Our expert-designed courses in Export-Import, Logistics, Retail, Office Management, Digital Marketing, and Soft Skills combine hands-on learning with placement support to make you job-ready. With a strong track record of successful placements, we are your trusted partner in skill development and career growth.</p>
-  </section>
 
+
+  <main>
+
+  <section class="courses">
+  <div class="courses-container">
+    <div class="courses-text">
+      <h2>Our Courses</h2>
+      <p>We  offers job-focused training programs that build real-world skills for employment. Our expert-designed courses in Export-Import, Logistics, Retail, Office Management, Digital Marketing, and Soft Skills combine hands-on learning with placement support to make you job-ready. With a strong track record of successful placements, we are your trusted partner in skill development and career growth.</p>
+    </div>
+    <div class="courses-image">
+      <img src="images/courses.jpeg" alt="Courses">
+    </div>
+  </div>
+</section>
 
 
   <!-- All Programs Section -->
@@ -156,65 +247,57 @@
 
   </main>
   
-<footer>
+<footer class="custom-footer">
   <div class="footer-container">
-    <div class="footer-logo">
-      <img src="images/logofooter.png" alt="Company Logo" width="100">
+    <!-- Logo and Company Name -->
+    <div class="footer-logo-section">
+      <img src="images/logofooter.png" alt="Company Logo" class="footer-logo">
+      <h4>Manhit Exim Pvt. Ltd.</h4>
+      <p><i class="fas fa-phone-alt"></i> +91-9210001575 | <i class="fas fa-envelope"></i> manhitinfo@gmail.com</p>
     </div>
-      <div class="footer-contact">
-        <h4>Contact Information</h4>
-      <div class="footer-item">
-        <span class="footer-icon" onclick="toggleInfo('address-info')">📍 Address <span class="arrow">▼</span></span>
-        <p id="address-info" class="hidden">Office No.4, E-6, 3rd Floor, Kalkaji, New Delhi-110019 </p>
-      </div>
-      <div class="footer-item">
-        <span class="footer-icon" onclick="toggleInfo('email-info')">📧 Email <span class="arrow">▼</span></span>
-        <p id="email-info" class="hidden">manhitinfo@gmail.com</p>
-      </div>
-      <div class="footer-item">
-        <span class="footer-icon" onclick="toggleInfo('phone-info')">📞 Phone <span class="arrow">▼</span></span>
-        <p id="phone-info" class="hidden">+91-9210001575</p>
-      </div>
-    </div>
+
+    <!-- Quick Links -->
     <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul class="footer-quick-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Courses</a></li>       
-        <li><a href="partners.html">Partners</a></li>
-        <li><a href="team.html">Teams</a></li>
-        <li><a href="jobs.html">Placement</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <h4>Important Links</h4>
+      <ul>
+        <li><a href="index">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="programs">Courses</a></li>
+        <li><a href="partners">Partners</a></li>
+        <li><a href="team">Teams</a></li>
+        <li><a href="jobs">Placement</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </div>
-    <div class="footer-links">
-      <h4>Follow Us</h4>
-      <div class="footer-social-icons" style="display: flex; gap: 18px; align-items: center; margin-top: 8px;">
-        <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqbHo4UmJEVUdKZmNXc1VnMklRMDRWSXV0LTVSZ3xBQ3Jtc0trUnZiR3lJLU5udThfOEJJLUkzTi1pTXRQbVBURUhsbEJtM19uRHVWS0hMbU5RbGJuVkpTRmJ0cWNUTjM1el9mSHplQ05pdm85X3ZzMDZINlNrdGwwUlI3bml1elQ4clpmc0FwYTh3cGhhdjlHVlJtUQ&q=https%3A%2F%2Fwww.instagram.com%2Fmanhit_exim_pvt_ltd%3Figsh%3DYnI4ZmVscDEzaHY%3D" target="_blank" title="YouTube" style="color:#FF0000;font-size:22px;">
-          <i class="fab fa-youtube"></i><span>Youtube</span>
-        </a>
-        <a href="https://www.instagram.com/manhit_exim_pvt_ltd?igsh=MTBmYXAwampsb2ZkeA==" target="_blank" title="Instagram" style="color:#C13584;font-size:22px;">
-          <i class="fab fa-instagram"></i><span>Instagram</span>
-        </a>
-        <a href="https://www.facebook.com/vikas.nager.259255/" target="_blank" title="Facebook" style="color:#1877F3;font-size:22px;">
-          <i class="fab fa-facebook"></i><span>Facebook</span>
-        </a>
-        <a href="https://www.linkedin.com/search/results/all/?keywords=Manhit%20Exim%20Pvt%20Ltd" target="_blank" title="LinkedIn" style="color:#0077B5;font-size:22px;">
-          <i class="fab fa-linkedin"></i><span>Linkedin</span>
-        </a>
-      </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copyright">
-      &copy; 2025 Manhit Exim Pvt Ltd. All rights reserved.
+
+    <!-- Address Map -->
+    <div class="footer-map">
+      <h4>Address Map</h4>
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.69345747069!2d77.25663745!3d28.5461704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b0c3b1c7b9%3A0x7b5b5b5b5b5b5b5b!2sKalkaji%2C%20New%20Delhi%2C%20Delhi%20110019!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
     </div>
-    <!-- <div class="footer-designed">
-      Designed by GYAN SINGH (<a href="mailto:gyansingh6047@gmail.com" style="color:inherit;text-decoration:underline;">gyansingh6047@gmail.com</a>)
-    </div> -->
+  </div>
+
+  <!-- Social Links -->
+  <div class="footer-social-icons">
+    <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqbHo4UmJEVUdKZmNXc1VnMklRMDRWSXV0LTVSZ3xBQ3Jtc0trUnZiR3lJLU5udThfOEJJLUkzTi1pTXRQbVBURUhsbEJtM19uRHVWS0hMbU5RbGJuVkpTRmJ0cWNUTjM1el9mSHplQ05pdm85X3ZzMDZINlNrdGwwUlI3bml1elQ4clpmc0FwYTh3cGhhdjlHVlJtUQ&q=https%3A%2F%2Fwww.instagram.com%2Fmanhit_exim_pvt_ltd%3Figsh%3DYnI4ZmVscDEzaHY%3D" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/manhit_exim_pvt_ltd?igsh=MTBmYXAwampsb2ZkeA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/vikas.nager.259255/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/search/results/all/?keywords=Manhit%20Exim%20Pvt%20Ltd" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Manhit Exim Pvt Ltd. All rights reserved.</p>
   </div>
 </footer>
+
+
+<!-- Bootstrap Bundle JS (includes Dropdowns, Collapse) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="server.js"></script>
 <script src="script.js"></script>

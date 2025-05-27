@@ -5,6 +5,7 @@ const express = require('express');
 const multer = require('multer');
 const path = require('path');
 const axios = require('axios');
+
 require('dotenv').config();
 
 const app = express();
@@ -14,8 +15,23 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files (HTML, CSS, JS, images)
+
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Handle requests without .html
+app.use((req, res, next) => {
+  const filePath = path.join(__dirname, 'public', req.path + '.html');
+  if (!req.path.includes('.') && !req.path.endsWith('/') && require('fs').existsSync(filePath)) {
+    res.sendFile(filePath);
+  } else {
+    next();
+  }
+});
+
+// Handle 404 errors
+app.use((req, res) => {
+  res.status(404).send('Page not found');
+});
 
 // Multer setup for file uploads (resumes)
 const upload = multer({ dest: 'uploads/' }); // Make sure to create an 'uploads' folder

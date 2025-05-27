@@ -6,53 +6,143 @@
   <title>MEPL</title>
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel='stylesheet' href='style.css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Include Bootstrap & FontAwesome in <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   
-<header>
-   <div class="logo">
-    <img src="images/logomanhit.png" alt="Company Logo" width="100">
-   </div>
-  <span class="hamburger" id="hamburger-menu" onclick="toggleMobileNav()">&#9776;</span> 
-  <nav>
-      <div class="nav-row">
-    <ul>
-      <li><a class='nav-link' href='index.html'>Home</a></li>
-      <li><a class='nav-link' href='about.html'>About</a></li>
-      <li><a class='nav-link' href='programs.html'>Courses</a></li>
-      <li><a class='nav-link' href='partners.html'>Partners</a></li>
-      <li><a class='nav-link' href='team.html'>Teams</a></li>
-      <li><a class='nav-link' href='jobs.html'>Placement</a></li>
-      <li><a class='nav-link' href='gallery.html'>Gallery</a></li>
-      <li><a class='nav-link' href='contact.html'>Contact</a></li>
-    </ul>
-    <div class="header-icons">
- <span id="header-search-icon" onclick="toggleHeaderSearch()" title="Search">
-    <i class="fas fa-search"></i>
-  </span>
-  <!-- Search Form (hidden by default, appears when icon is clicked) -->
-  <form id="header-search-form" onsubmit="return handleSiteSearch(event)">
-    <input type="text" id="site-search-input" placeholder="Search" required>
-    <button type="submit">
-      <i class="fas fa-search"></i>
-    </button>
-    <button type="button" id="header-search-close" onclick="toggleHeaderSearch()"> 
-    </button>
-  </form>  
 
-    <div class="register-box" onclick="openModal('register')" title="Register">
-  <!-- <i class="fas fa-user-plus"></i> -->
-   Register
-</div>
- <div class="login-box" onclick="openModal('logn')" title="Login">
-  <!-- <i class="fas fa-sign-in-alt"></i>  -->
-  Login
-</div>
-</div>
+
+<!-- Updated Header HTML Matching Style in Image -->
+<header class="custom-header navbar navbar-expand-lg navbar-dark bg-custom">
+  <!-- Top Bar -->
+  <div class="contact-info-wrapper top-bar d-flex justify-content-between align-items-center px-3 py-1">
+    <div class="contact-info">
+      <a href="mailto:info@manhitexim.com"><i class="fas fa-envelope"></i> manhitinfo@gmail.com</a>
+      <span class="mx-2">|</span>
+      <a href="tel:+91-9953575757"><i class="fas fa-phone-alt"></i> +91-9210001575</a>
     </div>
-  </nav>
-  
+    <div class="contact-info">
+      <a href="contact">Partner Login</a>
+    </div>
+    <div class="contact-info">  
+      <a href="jobs">Employee Login</a>
+    </div>
+    <div class="contact-info">  
+      <a href="about">Admin Login</a>
+      
+    </div>
+    <div class="contact-info"><select class="language-select">
+        <option>English</option>
+        <option>Hindi</option>
+      </select></div>
+  </div>
+  <!-- Logo and Company Name Section -->
+  <div class="logo-section">
+    <div class="logo">
+      <img src="images/logomanhit1.png" alt="Company Logo">
+    </div>
+    <div class="company-name">
+      <h1>Manhit Exim Pvt. Ltd.</h1>
+      <p>(Innovate Educate Elevate)</p>
+    </div>
+    <div class="partner-logos">
+      <img src="images/PMKVY.jpeg" alt="PMKVY Logo">
+      <img src="images/skill.jpg" alt="Skill India Logo">
+    </div>
+  </div>
+  <!-- Main Navbar -->
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- Hamburger Icon for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about">About</a></li>
+            <li><a class="dropdown-item" href="about">vision & Mission</a></li>
+            <li><a class="dropdown-item" href="about">Objectives</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="programs" data-bs-toggle="dropdown">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="programs">Apparel</a></li>
+            <li><a class="dropdown-item" href="programs">Beauty & Wellness</a></li>
+            <li><a class="dropdown-item" href="programs">Construction</a></li>
+            <li><a class="dropdown-item" href="programs">Sports</a></li>
+            <li><a class="dropdown-item" href="programs">Handicraft & Carpet</a></li>
+            <li><a class="dropdown-item" href="programs">Retail</a></li>
+            <li><a class="dropdown-item" href="programs">Bankin & Accounting</a></li>
+            <li><a class="dropdown-item" href="programs">Healthcare</a></li>
+            <li><a class="dropdown-item" href="programs">Electrical</a></li>
+            <li><a class="dropdown-item" href="programs">Electronic</a></li>
+            <li><a class="dropdown-item" href="programs">Green Jobs</a></li>
+            <li><a class="dropdown-item" href="programs">Tourism & Hospitality</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="partners" data-bs-toggle="dropdown">Partners</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="partners">National</a></li>
+            <li><a class="dropdown-item" href="partners">International</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" data-bs-toggle="dropdown">Teams</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="team">Trainers</a></li>
+            <li><a class="dropdown-item" href="team">Managers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="jobs" data-bs-toggle="dropdown">Placement</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="jobs">Openings</a></li>
+            <li><a class="dropdown-item" href="jobs">Internships</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="gallery" data-bs-toggle="dropdown">Gallery</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="gallery">Infrastructure Images</a></li>
+            <li><a class="dropdown-item" href="gallery">Training Images</a></li>
+            <li><a class="dropdown-item" href="gallery">Placement Images</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="contact" data-bs-toggle="dropdown">Contact</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact">Contact Form</a></li>
+            <li><a class="dropdown-item" href="contact">Map</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="header-icons d-flex align-items-center">
+        <span id="header-search-icon" onclick="toggleHeaderSearch()" title="Search">
+          <i class="fas fa-search"></i>
+        </span>
+        <form id="header-search-form" onsubmit="return handleSiteSearch(event)">
+          <input type="text" id="site-search-input" placeholder="Search" required>
+          <button type="submit"><i class="fas fa-search"></i></button>
+          <button type="button" id="header-search-close" onclick="toggleHeaderSearch()">
+            <i class="fas fa-times"></i>
+          </button>
+        </form>
+        <div class="register-box" onclick="openModal('register')">Register</div>
+        <div class="login-box" onclick="openModal('login')">Login</div>
+      </div>
+    </div>
+  </div>
 </header>
 
 
@@ -110,160 +200,225 @@
 </div>
 
   <main>
-   <section class='content'>
-  <div class="welcome-slider">
-    <div class="welcome-slide active">
-      <img src="images/explore.jpg" alt="Welcome to Manhit Exim Pvt. Ltd." />
-      <div class="welcome-info-box">
-        <h2>Empower Your Future With Us</h2>
-        <p>
-          Manhit Exim Pvt. Ltd. is a dynamic organization committed to equipping individuals with practical, industry-aligned skills through expert-led training and development programs.
-        </p>
-      </div>
-      <button class="welcome-slide-btn" onclick="location.href='about.html'">Learn More</button>
-    </div>
-    <div class="welcome-slide">
-      <img src="images/skill1.jpg" alt="Skill Development" />
-      <div class="welcome-info-box">
-        <h2>Skill Development</h2>
-        <p>
-          We actively participate in government-sponsored skill development missions and social upliftment projects, ensuring that our training remains accessible and impactful for all.
-        </p>
-      </div>
-      <button class="welcome-slide-btn" onclick="location.href='programs.html'">Our Programs</button>
-    </div>
-    <div class="welcome-slide">
-      <img src="images/background.jpg" alt="Export Import Training" />
-      <div class="welcome-info-box">
-        <h2> Vocational Training</h2>
-        <p>
-          With a strong foundation in export-import operations, recruitment services, and vocational education, we provide real-world exposure, hands-on learning, and career-ready certifications.
-        </p>
-      </div>
-      <button class="welcome-slide-btn" onclick="location.href='gallery.html'">Our Partners</button>
-    </div>
-    <button class="welcome-prev" onclick="moveWelcomeSlide(-1)">&#10094;</button>
-    <button class="welcome-next" onclick="moveWelcomeSlide(1)">&#10095;</button>
+    <section class="marquee-section">
+  <div class="marquee-wrapper">
+    <p class="marquee-text">
+      Welcome to Manhit Exim Pvt. Ltd. - Innovate, Educate, Elevate! We are committed to skill development and vocational training to empower individuals and create a skilled workforce for a better future. Join us in our journey to make a difference!
+    </p>
   </div>
 </section>
-    <!-- Courses Section -->
+
+
+<section class="news-events-section">
+    <!-- Left Column -->
+     <div class="info-column">
+      <h2>News and Events</h2>
+      <ul>
+        <li>Stay updated with the latest news and upcoming events</li>
+        <li>Access downloadable brochures, posters, and presentations</li>
+        <li>Connect with our team for more info</li>
+        <li>Explore event highlights and announcements</li>
+        <li>Stay informed about important deadlines and schedules</li>
+        <li>Discover key announcements and achievements</li>
+        <li>Join workshops, webinars, and seminars</li>
+        <li>Explore opportunities for collaboration and networking</li>
+      </ul>
+      <button onclick="window.location.href='contact'">Contact Us</button>
+    </div>
+
+     <!-- Right Column -->
+    <div class="news-column">
+      <div class="scrolling-news">
+        <div class="news-item">
+          <p>Event 1:Award</p>
+          <a href="images/conclave.jpeg" data-filename="Innovation_Day.jpg">Download Poster (JPG)</a>
+        </div>
+        <div class="news-item">
+          <p>Event 2: Presentation On Village Development Program</p>
+          <a href="files/event2.pptx" data-filename="Village Development Program.pptx">Download Presentation (PPTX)</a>
+        </div>
+        <div class="news-item">
+          <p>Event 3: MEPL magazine</p>
+          <a href="files/event1.pdf" data-filename="MEPL_Magazine.pdf">Download Brochure (PDF)</a>
+        </div>
+        
+        <!-- Add more items as needed -->
+      </div>
+    </div>
+
+   
+    
+  </section>
+
+   <section class="welcome-section">
+    <div class="text-content">
+      <h2>WELCOME TO<br><span>Manhit Exim PVT. LTD.</span><br><span>(Innovate Educate Elevate)</span></h2>
+      <p>
+       Manhit Exim Pvt. Ltd. is committed to contributing to the advancement of private skill-based and vocational education in India. Through a holistic approach, we aim to uplift the overall quality of skill development in the private sector. As industry standards in vocational training continue to rise over the coming years, Manhit Exim Pvt. Ltd. seeks to collaborate with social welfare organizations and educational institutions to promote and enhance private skill-based education and training across the country.
+      </p>
+      <p>
+        This may be a small step toward participating in Skillful India, but with meaningful effort, sincerity, and transparent thinking, we are committed to turning it into a significant milestone.
+      </p>
+      <a href="about" class="read-more-btn">Read More →</a>
+    </div>
+    <div class="image-content">
+      <img src="images/conclave.jpeg" alt="Smiling Woman with Laptop">
+    </div>
+  </section>
+
+    <section class="media-carousel">
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="mediaCarousel">
+      <div class="carousel-slide">
+        <img src="images/live.jpeg" alt="Our Journey">
+      </div>
+      
+      <div class="carousel-slide">
+        <img src="images/placement1.jpeg" alt="Our Journey">
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-slide">
+        <img src="images/live1.jpeg" alt="Our Journey">
+      </div>
+      
+      <div class="carousel-slide">
+        <img src="images/live2.jpeg" alt="Our Journey">
+      </div>
+      <!-- Slide 4 -->
+      
+       
+      <div class="carousel-slide">
+        <img src="images/live3.jpeg" alt="Our Journey">
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
+ </section>
+
+
   <section class="courses">
-    <h2>Our Courses</h2>
-    <img src="images/courses1.jpg" alt="Courses" >
-   <p>we offer practical, job-oriented training programs designed to build real-world skills that lead to employment. Our expert-crafted courses in Export-Import, Logistics, Retail, Office Management, Digital Marketing, and Soft Skills focus on hands-on learning and industry relevance.
+  <div class="courses-container">
+    <div class="courses-text">
+      <h2>Our Courses</h2>
+      <p>we offer practical, job-oriented training programs designed to build real-world skills that lead to employment. Our expert-crafted courses in Export-Import, Logistics, Retail, Office Management, Digital Marketing, and Soft Skills focus on hands-on learning and industry relevance.
 
-Each program is designed to make you job-ready through practical sessions, real case studies, and placement support. Whether you're starting your career or upskilling for better opportunities, our training ensures you gain the technical and personal skills needed to succeed in today’s competitive job market.
+      Each program is designed to make you job-ready through practical sessions, real case studies, and placement support. Whether you're starting your career or upskilling for better opportunities, our training ensures you gain the technical and personal skills needed to succeed in today’s competitive job market.
 
-With a strong track record of successful placements and professional growth, Manhit Exim Pvt. Ltd. is your trusted partner for skill development and career advancement.</p> 
-   <button onclick="location.href='programs.html'">Explore Courses</button>
-  </section>
-
-  <!-- Partners Section -->
-  <section class="partners">
-    <h2>Our Partners</h2>
-    <div class="partner-list">
-      <div class="partner">
-        <img src="images/skill.jpg" alt="SIDH" width="100">
-        <h4>SIDH</h4>
-        <p>Empowering youth with skills for a better future.</p>
-      </div>
-      <div class="partner">
-        <img src="images/PMKVY.jpeg" alt="PMKVY" width="100">
-        <h4>PMKVY</h4>
-        <p>A Government of India initiative to train over 40 crore people in different skills.</p>
-      </div>
-      <div class="partner">
-        <img src="images/ddugky.jpeg" alt="DDU-GKY" width="100">
-        <h4>DDU-GKY</h4>
-        <p>Facilitates skill development across India through public-private partnerships.</p>
-      </div>
-      <div class="partner">
-        <img src="images/asdm.jpeg" alt="ASDUM" width="100">
-        <h4>ASDUM</h4>
-        <p>Works to improve the lives of children and their families worldwide.</p>
-      </div>
-      <div class="partner">
-        <img src="images/mapcet.jpeg" alt="MAPCET" width="100">
-        <h4>MAPCET</h4>
-        <p>Dedicated to global health and well-being.</p>
-      </div>
-    <button class="partner-btn" onclick="location.href='partners.html'">Click Here </button>
-  </section>
-
+      With a strong track record of successful placements and professional growth, Manhit Exim Pvt. Ltd. is your trusted partner for skill development and career advancement.</p>
+      <button onclick="location.href='programs'">Explore Courses</button>
+    </div>
+    <div class="courses-image">
+      <img src="images/courses1.jpg" alt="Courses">
+    </div>
+  </div>
+</section>
   <!-- Projects Section -->
   <section class="projects">
-     <h2>Placement (Rozgar Mela)</h2>
-    <img src="images/placement.jpg" alt="Placement" >
-   
-    <p>
-   we organize Rozgar Melas to directly connect job-ready candidates with leading employers through on-the-spot interviews and hiring opportunities. These employment fairs bridge the gap between skilled talent and industry needs, making the hiring process faster and more effective. With resume support, interview preparation, and access to real job openings, our Rozgar Melas serve as powerful platforms for immediate employment and career growth.
-   </p>
-    <button onclick="location.href='jobs.html'">Apply Now...</button>
+  <div class="projects-container">
+    <div class="projects-text">
+      <h2>Placement (Rozgar Mela)</h2>
+      <p>
+        we organize Rozgar Melas to directly connect job-ready candidates with leading employers through on-the-spot interviews and hiring opportunities. These employment fairs bridge the gap between skilled talent and industry needs, making the hiring process faster and more effective. With resume support, interview preparation, and access to real job openings, our Rozgar Melas serve as powerful platforms for immediate employment and career growth.
+      </p>
+      <button onclick="location.href='jobs'">Apply Now...</button>
+    </div>
+    <div class="projects-image">
+      <img src="images/placement2.jpeg" alt="Placement">
+    </div>
+  </div>
+</section>
+
+  <!-- Partners Section -->
+  <section class="partners1">
+    <h2>Our Partners</h2>
+    <div class="partner1-list">
+       <div class="partner1">
+        <img src="images/skill.jpg" alt="SIDH" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/PMKVY.jpeg" alt="PMKVY" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/ddugky.jpeg" alt="DDU-GKY" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/asdm.jpeg" alt="ASDUM" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/mapcet.jpeg" alt="MAPCET" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/Dnulm.jpeg" alt="Day-NULM" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/rsdlc.jpeg" alt="RSDLC" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/speflsc.jpeg" alt="SPEFL-SC" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/upsdm.jpeg" alt="UPSDM" width="100">
+      </div>
+      <div class="partner1">
+        <img src="images/nulm.jpeg" alt="NULM" width="100">
+      </div>
+    </div>
   </section>
-  </main>
+
+ 
+
   
-<footer>
+<footer class="custom-footer">
   <div class="footer-container">
-    <div class="footer-logo">
-      <img src="images/logofooter.png" alt="Company Logo" width="100">
+    <!-- Logo and Company Name -->
+    <div class="footer-logo-section">
+      <img src="images/logofooter.png" alt="Company Logo" class="footer-logo">
+      <h4>National Institute of Rural Skill Development</h4>
+      <p><i class="fas fa-phone-alt"></i> +91-9210001575 | <i class="fas fa-envelope"></i> manhitinfo@gmail.com  </p>
     </div>
-      <div class="footer-contact">
-        <h4>Contact Information</h4>
-      <div class="footer-item">
-        <span class="footer-icon" onclick="toggleInfo('address-info')">📍 Address <span class="arrow">▼</span></span>
-        <p id="address-info" class="hidden">Office No.4, E-6, 3rd Floor, Kalkaji, New Delhi-110019 </p>
-      </div>
-      <div class="footer-item">
-        <span class="footer-icon" onclick="toggleInfo('email-info')">📧 Email <span class="arrow">▼</span></span>
-        <p id="email-info" class="hidden">manhitinfo@gmail.com</p>
-      </div>
-      <div class="footer-item">
-        <span class="footer-icon" onclick="toggleInfo('phone-info')">📞 Phone <span class="arrow">▼</span></span>
-        <p id="phone-info" class="hidden">+91-9210001575</p>
-      </div>
-    </div>
+
+    <!-- Quick Links -->
     <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul class="footer-quick-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Courses</a></li>
-       <li><a href="partners.html">Partners</a></li>    
-        <li><a href="team.html">Teams</a></li>
-        <li><a href="jobs.html">Placement</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <h4>Important Links</h4>
+      <ul>
+        <li><a href="index">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="programs">Courses</a></li>
+        <li><a href="partners">Partners</a></li>
+        <li><a href="team">Teams</a></li>
+        <li><a href="jobs">Placement</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </div>
-    <div class="footer-links">
-      <h4>Follow Us</h4>
-      <div class="footer-social-icons" style="display: flex; gap: 18px; align-items: center; margin-top: 8px;">
-        <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqbHo4UmJEVUdKZmNXc1VnMklRMDRWSXV0LTVSZ3xBQ3Jtc0trUnZiR3lJLU5udThfOEJJLUkzTi1pTXRQbVBURUhsbEJtM19uRHVWS0hMbU5RbGJuVkpTRmJ0cWNUTjM1el9mSHplQ05pdm85X3ZzMDZINlNrdGwwUlI3bml1elQ4clpmc0FwYTh3cGhhdjlHVlJtUQ&q=https%3A%2F%2Fwww.instagram.com%2Fmanhit_exim_pvt_ltd%3Figsh%3DYnI4ZmVscDEzaHY%3D" target="_blank" title="YouTube" style="color:#FF0000;font-size:22px;">
-          <i class="fab fa-youtube"></i><span>YouTube</span>
-        </a>
-        <a href="https://www.instagram.com/manhit_exim_pvt_ltd?igsh=MTBmYXAwampsb2ZkeA==" target="_blank" title="Instagram" style="color:#C13584;font-size:22px;">
-          <i class="fab fa-instagram"></i><span>Instagram</span>
-        </a>
-        <a href="https://www.facebook.com/vikas.nager.259255/" target="_blank" title="Facebook" style="color:#1877F3;font-size:22px;">
-          <i class="fab fa-facebook"></i><span>Facebook</span>
-        </a>
-        <a href="https://www.linkedin.com/search/results/all/?keywords=Manhit%20Exim%20Pvt%20Ltd" target="_blank" title="LinkedIn" style="color:#0077B5;font-size:22px;">
-          <i class="fab fa-linkedin"></i><span>Linkedin</span>
-        </a>
-      </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copyright">
-      &copy; 2025 Manhit Exim Pvt Ltd. All rights reserved. 
+
+    <!-- Address Map -->
+    <div class="footer-map">
+      <h4>Address Map</h4>
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.69345747069!2d77.25663745!3d28.5461704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b0c3b1c7b9%3A0x7b5b5b5b5b5b5b5b!2sKalkaji%2C%20New%20Delhi%2C%20Delhi%20110019!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
     </div>
   </div>
+
+  <!-- Social Links -->
+  <div class="footer-social-icons">
+    <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqbHo4UmJEVUdKZmNXc1VnMklRMDRWSXV0LTVSZ3xBQ3Jtc0trUnZiR3lJLU5udThfOEJJLUkzTi1pTXRQbVBURUhsbEJtM19uRHVWS0hMbU5RbGJuVkpTRmJ0cWNUTjM1el9mSHplQ05pdm85X3ZzMDZINlNrdGwwUlI3bml1elQ4clpmc0FwYTh3cGhhdjlHVlJtUQ&q=https%3A%2F%2Fwww.instagram.com%2Fmanhit_exim_pvt_ltd%3Figsh%3DYnI4ZmVscDEzaHY%3D" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/manhit_exim_pvt_ltd?igsh=MTBmYXAwampsb2ZkeA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/vikas.nager.259255/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/search/results/all/?keywords=Manhit%20Exim%20Pvt%20Ltd" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <!-- Footer Bottom -->
   <div class="footer-bottom">
-  <div class="footer-designed">
-      Designed by GYAN SINGH (<a href="mailto:gyansingh6047@gmail.com" style="color:inherit;text-decoration:underline;">gyansingh6047@gmail.com</a>)
-    </div>
+    <p>&copy; 2025 Manhit Exim Pvt Ltd. All rights reserved.</p>
+    <p>Designed by GYAN SINGH (<a href="mailto:gyansingh6047@gmail.com">gyansingh6047@gmail.com</a>)</p>
   </div>
 </footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="server.js"></script>
 <script src="script.js"></script>
 
@@ -322,6 +477,21 @@ function handleSiteSearch(e) {
   return false;
 }
   
+document.addEventListener('DOMContentLoaded', () => {
+  const partnerList = document.querySelector('.partner1-list');
+  const clone = partnerList.innerHTML; // Clone the content
+  partnerList.innerHTML += clone; // Append the clone for seamless scrolling
+});
+
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.custom-header');
+  if(window.scrollY > 20) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
 // document.getElementById('hamburger-menu').onclick = function(e) {
 //   e.stopPropagation();
 //   var navRow = document.querySelector('.nav-row');
@@ -334,6 +504,12 @@ function handleSiteSearch(e) {
 //     navRow.classList.remove('show');
 //   }
 // });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const marqueeText = document.querySelector('.marquee-text');
+  marqueeText.textContent = 'Welcome to Manhit Exim Pvt. Ltd. - Innovate, Educate, Elevate! Empowering individuals through skill development and vocational training.';
+});
+
 
 function toggleHeaderSearch() {
   const form = document.getElementById('header-search-form');
@@ -383,22 +559,34 @@ document.addEventListener('click', function(e) {
   }
 });
 
-
-let welcomeSlideIndex = 0;
-const welcomeSlides = document.querySelectorAll('.welcome-slide');
-function showWelcomeSlide(idx) {
-  welcomeSlides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === idx);
+document.addEventListener('click', function(e) {
+  document.querySelectorAll('.modal-bg.show').forEach(modal => {
+    if (!modal.querySelector('.modal-box').contains(e.target) && !e.target.closest('.register-box') && !e.target.closest('.login-box')) {
+      modal.classList.remove('show');
+    }
   });
+});
+
+
+
+let mediaCurrentSlide = 0;
+const mediaSlides = document.querySelectorAll('.media-carousel .carousel-slide');
+const mediaTrack = document.querySelector('.media-carousel .carousel-track');
+
+function showMediaSlide(index) {
+  mediaCurrentSlide = index % mediaSlides.length;
+  mediaTrack.style.transform = `translateX(-${mediaCurrentSlide * 100}%)`;
 }
-function moveWelcomeSlide(n) {
-  welcomeSlideIndex += n;
-  if (welcomeSlideIndex >= welcomeSlides.length) welcomeSlideIndex = 0;
-  if (welcomeSlideIndex < 0) welcomeSlideIndex = welcomeSlides.length - 1;
-  showWelcomeSlide(welcomeSlideIndex);
-}
-// Initialize
-showWelcomeSlide(welcomeSlideIndex);
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+  showMediaSlide(mediaCurrentSlide + 1);
+}, 5000);
+
+// Initialize first slide
+showMediaSlide(0);
+
+
 
 document.querySelectorAll('.partner').forEach(function(box) {
     box.addEventListener('click', function() {
@@ -428,10 +616,18 @@ function toggleInfo(id) {
   }
   // Modal logic
 function openModal(type) {
-  document.getElementById(type + '-modal').classList.add('active');
+  closeAllModals();
+  document.getElementById(`${type}-modal`).classList.add('show');
 }
+
 function closeModal(type) {
-  document.getElementById(type + '-modal').classList.remove('active');
+  document.getElementById(`${type}-modal`).classList.remove('show');
+}
+
+function closeAllModals() {
+  document.querySelectorAll('.modal-bg').forEach(modal => {
+    modal.classList.remove('show');
+  });
 }
 function switchModal(from, to) {
   closeModal(from);
@@ -541,6 +737,29 @@ document.getElementById('forgot-form').onsubmit =async function(e) {
 // Prevent access to main content if not logged in
 window.addEventListener('DOMContentLoaded', function() {
   showMainIfLoggedIn();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const downloadLinks = document.querySelectorAll('.news-item a');
+
+  downloadLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default link behavior
+
+      const fileUrl = this.getAttribute('href'); // Get the file URL
+      const fileName = this.getAttribute('data-filename') || fileUrl.split('/').pop(); // Get the file name
+
+      // Create a temporary anchor element to trigger the download
+      const tempLink = document.createElement('a');
+      tempLink.href = fileUrl;
+      tempLink.download = fileName; // Set the download attribute with the file name
+      document.body.appendChild(tempLink);
+      tempLink.click(); // Trigger the download
+      document.body.removeChild(tempLink); // Remove the temporary link
+
+      console.log(`User downloaded: ${fileName}`); // Log the download action
+    });
+  });
 });
 
 
