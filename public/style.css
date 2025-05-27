@@ -3092,7 +3092,7 @@ button:hover, .btn:hover {
   display: inline-block;
   font-size: 1.2rem; /* Adjust font size */
   font-weight: 500;
-  animation: marquee 10s linear infinite; /* Animation for continuous scrolling */
+  animation: marquee 20s linear infinite; /* Animation for continuous scrolling */
   padding-left: 50%; /* Reduce padding to make it reappear faster */
 }
 
