@@ -1388,6 +1388,8 @@ nav ul {
   color: #fff;
   font-size: 1.08em;
   margin: 0;
+  text-indent: 0;
+    text-align: justify;
 }
 
 /* Vision & Mission Section */
@@ -1473,6 +1475,8 @@ nav ul {
   padding: 10px 14px;
   margin-bottom: 12px;
   margin-top: 0;
+  text-indent: 0;
+    text-align: justify;
 }
  .gallery-section h3 {
   color: #e25b25;
@@ -1863,11 +1867,7 @@ button:hover, .btn:hover {
   margin-bottom: 14px;
   box-shadow: 0 1px 6px rgba(0,0,0,0.07);
 }
-.content p {
-  color: #234;
-  font-size: 1.08em;
-  margin-bottom: 0;
-}
+
 
 .content img[alt="partners"] {
   display: block;
@@ -2151,11 +2151,13 @@ button:hover, .btn:hover {
   font-size: 1.4em;
 }
 .content p {
-  color: #020a33;
-  font-size: 1.08em;
-  margin-bottom: 0;
+  font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-indent: 0;
+    text-align: justify;
 }
-
 /* Jobs Available Section */
 .jobs-available {
   background: #fff;
@@ -2614,6 +2616,8 @@ button:hover, .btn:hover {
   color: #444;
   margin-bottom: 15px;
   line-height: 1.6;
+  text-indent: 0;
+  text-align: justify;
 }
 
 .read-more-btn {
@@ -2751,6 +2755,8 @@ button:hover, .btn:hover {
 
   .courses-text p {
     font-size: 15px;
+    text-indent: 0;
+    text-align: justify;
   }
 
   .courses-text button {
@@ -2800,6 +2806,8 @@ button:hover, .btn:hover {
   line-height: 1.6;
   color: #555;
   margin-bottom: 20px;
+  text-indent: 0;
+    text-align: justify;
 }
 
 .projects-text button {
@@ -2846,6 +2854,8 @@ button:hover, .btn:hover {
 
   .projects-text p {
     font-size: 15px;
+    text-indent: 0;
+    text-align: justify;
   }
 
   .projects-text button {
@@ -3086,16 +3096,19 @@ button:hover, .btn:hover {
   white-space: nowrap; /* Prevent text wrapping */
   overflow: hidden; /* Hide overflow */
   position: relative;
+  animation: marquee 10s linear infinite; /* Continuous scrolling animation */
 }
 
 .marquee-text {
   display: inline-block;
   font-size: 1.2rem; /* Adjust font size */
   font-weight: 500;
-  animation: marquee 30s linear infinite; /* Animation for continuous scrolling */
+  animation: marquee 25s linear infinite; /* Animation for continuous scrolling */
   padding-left: 50%; /* Reduce padding to make it reappear faster */
 }
-
+.marquee-wrapper:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
 /* Keyframes for marquee animation */
 @keyframes marquee {
   0% {
@@ -3396,5 +3409,26 @@ button:hover, .btn:hover {
 
   .news-item a {
     font-size: 0.95rem;
+  }
+}
+
+/* Scrolling News */
+.scrolling-news {
+  height: 300px; /* Set a fixed height */
+  overflow: hidden;
+  animation: scroll-up 10s linear infinite; /* Continuous scrolling animation */
+}
+
+.scrolling-news:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+/* Keyframes for scrolling up */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
