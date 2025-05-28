@@ -3108,14 +3108,13 @@ button:hover, .btn:hover {
   white-space: nowrap; /* Prevent text wrapping */
   overflow: hidden; /* Hide overflow */
   position: relative;
-  animation: marquee 10s linear infinite; /* Continuous scrolling animation */
 }
 
 .marquee-text {
   display: inline-block;
   font-size: 1.2rem; /* Adjust font size */
   font-weight: 500;
-  animation: marquee 25s linear infinite; /* Animation for continuous scrolling */
+  animation: marquee 20s linear infinite; /* Animation for continuous scrolling */
   padding-left: 50%; /* Reduce padding to make it reappear faster */
 }
 .marquee-wrapper:hover {
