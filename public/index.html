@@ -742,7 +742,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollingNews = document.querySelector(".scrolling-news");
 
+  // Pause scrolling when hovered
+  scrollingNews.addEventListener("mouseenter", function () {
+    scrollingNews.style.animationPlayState = "paused";
+  });
+
+  // Resume scrolling when hover ends
+  scrollingNews.addEventListener("mouseleave", function () {
+    scrollingNews.style.animationPlayState = "running";
+  });
+});
   </script>
 </body>
 </html>
