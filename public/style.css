@@ -1477,7 +1477,7 @@ nav ul {
 
 /* Gallery Section (Awards) */
 .gallery-section {
-  background: #e6f2ff;;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.07);
   padding: 24px 20px 18px 20px;
@@ -1490,8 +1490,7 @@ nav ul {
 
 .gallery-section p {
   background-color: #fff; /* Same light blue */
-  color: #020a33;
-  border: 2px solid #222; /* Black border */
+  color: #000;
   border-radius: 8px;
   padding: 10px 14px;
   margin-bottom: 12px;
@@ -1524,7 +1523,7 @@ nav ul {
 
 /* Leadership Section */
 .leadership {
-  background: #e6f2ff;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.07);
   padding: 24px 20px 18px 20px;
