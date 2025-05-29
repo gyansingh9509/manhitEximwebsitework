@@ -1257,7 +1257,7 @@ nav ul {
 }
 .partner h4 {
   margin: 0 0 8px 0;
-   font-size: 2rem; 
+   font-size: 1.2rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #03125f;
@@ -1757,7 +1757,7 @@ button:hover, .btn:hover {
 }
 .partner h4 {
   margin: 0 0 6px 0;
-   font-size: 2rem; 
+   font-size: 1.2rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #e25b25;
