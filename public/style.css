@@ -268,7 +268,7 @@ body {
 /* Live classes section photos with moving */
 
 .media-carousel h2 {
-  font-size: 2rem; 
+  font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 20px;
@@ -297,7 +297,7 @@ body {
 }
 
 .carousel-slide h3 {
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 10px;
@@ -322,14 +322,16 @@ body {
 }
 @media (max-width: 768px) {
   .media-carousel h2 {
-     font-size: 2rem; 
+     font-size: 1.3rem; 
    font-weight: bold;
    text-decoration: underline;
     margin-bottom: 15px;
   }
 
   .carousel-slide h3 {
-    font-size: 18px;
+     font-size: 1.3rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .carousel-slide p {
@@ -353,13 +355,15 @@ body {
   }
 
   .media-carousel h2 {
-     font-size: 2rem; 
+     font-size: 1.3rem; 
    font-weight: bold;
    text-decoration: underline;
   }
 
   .carousel-slide h3 {
-    font-size: 16px;
+    font-size: 1.3rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .carousel-slide p {
@@ -1135,7 +1139,7 @@ nav ul {
 
 .welcome-info-box h2 {
   margin: 0 0 10px 0;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #03125f;
@@ -1217,7 +1221,7 @@ nav ul {
 .partners h2 {
   color: #03125f;
   margin-bottom: 18px;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -1257,7 +1261,7 @@ nav ul {
 }
 .partner h4 {
   margin: 0 0 8px 0;
-   font-size: 1.2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #03125f;
@@ -1345,7 +1349,7 @@ nav ul {
 .projects h2 {
   color: black;
   margin-bottom: 18px;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -1392,7 +1396,7 @@ nav ul {
 .about-company h2 {
   color: #e25b25;
   margin-bottom: 12px;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -1418,7 +1422,7 @@ nav ul {
   color: #e25b25;
   text-align: center;
   margin-bottom: 18px;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -1460,7 +1464,7 @@ nav ul {
   color: #e25b25;
   margin-bottom: 12px;
   text-align: center;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -1535,7 +1539,7 @@ nav ul {
 .leadership h2 {
   color: #e25b25;
   margin-bottom: 18px;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -1725,7 +1729,7 @@ button:hover, .btn:hover {
   color: #e25b25;
   margin-bottom: 18px;
   letter-spacing: 1px;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -1757,7 +1761,7 @@ button:hover, .btn:hover {
 }
 .partner h4 {
   margin: 0 0 6px 0;
-   font-size: 1.2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #e25b25;
@@ -1829,7 +1833,7 @@ button:hover, .btn:hover {
 }
 .course-box h4 {
   margin: 0 0 8px 0;
-   font-size: 2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #03125f;
@@ -1892,7 +1896,7 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 } */
@@ -1970,7 +1974,7 @@ button:hover, .btn:hover {
 }
 .course-box h4 {
   margin: 0 0 8px 0;
-   font-size: 2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #e25b25;
@@ -2032,7 +2036,7 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -2189,7 +2193,7 @@ button:hover, .btn:hover {
 .content h2 {
   color: #020a33;
   margin-bottom: 14px;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -2239,7 +2243,7 @@ button:hover, .btn:hover {
 }
 .job-box h4 {
   margin: 0 0 8px 0;
-   font-size: 2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   color: #e25b25;
@@ -2356,7 +2360,7 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -2492,7 +2496,7 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 } */
@@ -2653,7 +2657,7 @@ button:hover, .btn:hover {
 }
 
 .text-content h2 {
-  font-size: 2rem; 
+  font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 20px;
@@ -2712,7 +2716,7 @@ button:hover, .btn:hover {
   }
 
   .text-content h2 {
-     font-size: 2rem; 
+     font-size: 1.3rem; 
    font-weight: bold;
    text-decoration: underline;
   }
@@ -2754,7 +2758,7 @@ button:hover, .btn:hover {
 }
 
 .courses-text h2 {
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 20px;
@@ -2807,7 +2811,7 @@ button:hover, .btn:hover {
   }
 
   .courses-text h2 {
-     font-size: 2rem; 
+     font-size: 1.3rem; 
    font-weight: bold;
    text-decoration: underline;
   }
@@ -2855,7 +2859,7 @@ button:hover, .btn:hover {
 }
 
 .projects-text h2 {
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 20px;
@@ -2910,7 +2914,7 @@ button:hover, .btn:hover {
   }
 
   .projects-text h2 {
-     font-size: 2rem; 
+     font-size: 1.3rem; 
    font-weight: bold;
    text-decoration: underline;
   }
@@ -2960,7 +2964,7 @@ button:hover, .btn:hover {
 }
 
 .text-content h2 {
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 16px;
@@ -2989,7 +2993,7 @@ button:hover, .btn:hover {
   }
 
   .text-content h2 {
-     font-size: 2rem; 
+     font-size: 1.3rem; 
    font-weight: bold;
    text-decoration: underline;
   }
@@ -3013,7 +3017,7 @@ button:hover, .btn:hover {
   }
 
   .text-content h2 {
-     font-size: 2rem; 
+     font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   }
@@ -3215,7 +3219,7 @@ button:hover, .btn:hover {
 }
 
 .footer-logo-section h4 {
-   font-size: 2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   margin: 5px 0;
@@ -3232,7 +3236,7 @@ button:hover, .btn:hover {
 }
 
 .footer-links h4 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
    font-weight: bold;
    text-decoration: underline;
 }
@@ -3263,7 +3267,7 @@ button:hover, .btn:hover {
 }
 
 .footer-map h4 {
-   font-size: 2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 10px;
@@ -3334,7 +3338,7 @@ button:hover, .btn:hover {
 }
 
 .partners1 h2 {
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 20px;
@@ -3423,7 +3427,7 @@ button:hover, .btn:hover {
 
 .info-column h2 {
   margin-top: 0;
-   font-size: 2rem; 
+   font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
 }
@@ -3466,7 +3470,7 @@ button:hover, .btn:hover {
   }
 
   .info-column h2 {
-     font-size: 2rem; 
+     font-size: 1.5rem; 
    font-weight: bold;
    text-decoration: underline;
   }
@@ -3550,7 +3554,7 @@ button:hover, .btn:hover {
 }
 
 .governing-grid .member h4 {
-   font-size: 2rem; 
+   font-size: 1.4rem; 
    font-weight: bold;
    text-decoration: underline;
   margin-bottom: 10px;
