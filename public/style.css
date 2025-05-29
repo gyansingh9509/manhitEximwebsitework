@@ -3063,7 +3063,7 @@ button:hover, .btn:hover {
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #f0f0f0; /* Highlight background on hover */
+  background-color: #fff; /* Highlight background on hover */
   color: #03125f !important; /* Change text color on hover */
 }
   .custom-header {
@@ -3078,7 +3078,7 @@ button:hover, .btn:hover {
     border: none;
   }
   .custom-header .dropdown-menu a:hover {
-    background-color: #03125f;
+    background-color: #fff;
   }
   .header-icons {
     display: flex;
