@@ -519,7 +519,6 @@ body {
 .login-box, .register-box {
   cursor: pointer;
   padding: 8px 12px;
-  background: #020a33;
   color: #fff;
   border-radius: 5px;
   margin: 5px;
@@ -3095,7 +3094,6 @@ button:hover, .btn:hover {
   .header-icons .login-box {
     cursor: pointer;
     padding: 6px 10px;
-    background-color: #03125f;
     color: #000;
     border-radius: 4px;
     font-weight: 600;
