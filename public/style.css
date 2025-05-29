@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Poppins;
 }
 
 /* Hamburger Icon Styling */
@@ -531,7 +531,7 @@ body {
 
 /* --- GENERAL STYLES --- */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: Poppins;
   margin: 0;
   padding: 0;
   background: #f4f8fb;
@@ -1567,7 +1567,7 @@ nav ul {
 
 /* --- GENERAL STYLES --- */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: Poppins;
   margin: 0;
   padding: 0;
   background: #f4f8fb;
@@ -2904,7 +2904,7 @@ button:hover, .btn:hover {
 
 .text-content {
   flex: 1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Poppins;
   min-width: 260px;
 }
 
@@ -3136,7 +3136,7 @@ button:hover, .btn:hover {
   background-color: #020a33; /* Black background */
   color: #fff; /* White text */
   padding: 20px 0;
-  font-family: Arial, sans-serif;
+  font-family: Poppins;
 }
 
 .footer-container {
