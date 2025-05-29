@@ -65,7 +65,7 @@ body {
 .navbar-toggler:hover .navbar-toggler-icon,
 .navbar-toggler:hover .navbar-toggler-icon::before,
 .navbar-toggler:hover .navbar-toggler-icon::after {
-  background-color: #007bff; /* Change color on hover */
+  background-color: #03125f; /* Change color on hover */
 }
 
 /* Responsive: Ensure visibility on smaller screens */
@@ -139,7 +139,7 @@ body {
 /* Main header */
 .custom-header {
   background-color: #fff;
-  border-bottom: 3px solid #dc3545;
+  border-bottom: 3px solid #e25b25;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
@@ -220,7 +220,7 @@ body {
 .login-box {
   cursor: pointer;
   padding: 5px 10px;
-  background-color: #003d99;
+  background-color: #03125f;
   color: white;
   border-radius: 4px;
   font-size: 14px;
@@ -260,16 +260,17 @@ body {
 
 
 .media-carousel {
-  background-color: #020a33;
+  background-color: #fff;
   padding: 40px 20px;
-  background-color: #f8f9fa;
   text-align: center;
 }
 
 /* Live classes section photos with moving */
 
 .media-carousel h2 {
-  font-size: 32px;
+  font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 20px;
 }
 
@@ -296,7 +297,9 @@ body {
 }
 
 .carousel-slide h3 {
-  font-size: 24px;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 10px;
 }
 
@@ -319,7 +322,9 @@ body {
 }
 @media (max-width: 768px) {
   .media-carousel h2 {
-    font-size: 24px;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
     margin-bottom: 15px;
   }
 
@@ -348,7 +353,9 @@ body {
   }
 
   .media-carousel h2 {
-    font-size: 20px;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .carousel-slide h3 {
@@ -406,7 +413,7 @@ body {
   display: block;
   margin-top: 10px;
   font-size: 0.9rem;
-  color: #007bff;
+  color: #e25b25;
   cursor: pointer;
   text-align: center;
 }
@@ -445,14 +452,13 @@ body {
 
 .modal-box input:focus {
   outline: none;
-  border-color: #007bff;
 }
 
 /* === Buttons === */
 .modal-box button[type="submit"] {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
+  background-color: #03125f;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -462,7 +468,7 @@ body {
 }
 
 .modal-box button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #020a33;
 }
 
 /* === Close Button === */
@@ -482,7 +488,7 @@ body {
   display: block;
   margin-top: 15px;
   text-align: center;
-  color: #007bff;
+  color: #03125f;
   cursor: pointer;
   font-size: 0.9rem;
 }
@@ -513,7 +519,7 @@ body {
 .login-box, .register-box {
   cursor: pointer;
   padding: 8px 12px;
-  background: #007bff;
+  background: #020a33;
   color: #fff;
   border-radius: 5px;
   margin: 5px;
@@ -600,7 +606,6 @@ nav ul li a:hover, nav ul li .nav-link:hover {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   font-size: 16px;
-  border: 1px solid #007bff;
 }
 .register-box:hover, .login-box:hover {
   background: #007bff;
@@ -613,7 +618,7 @@ nav ul li a:hover, nav ul li .nav-link:hover {
   transition: color 0.2s;
 }
 .header-icons i:hover {
-  color: #ffc107;
+  color: #03125f;
 }
 
 /* --- SEARCH FORM --- */
@@ -667,10 +672,9 @@ nav ul li a:hover, nav ul li .nav-link:hover {
 }
 
 #header-search-icon:hover {
-  background: #02172d;
+  background: #03125f;
   color: #fff;
   box-shadow: 0 4px 16px rgba(0,123,255,0.12);
-  border-color: #03101d;
 }
 
 /* --- MOBILE RESPONSIVE STYLES FOR index.html --- */
@@ -794,7 +798,7 @@ nav ul {
     width: 100%;
     text-align: left;
     margin: 0;
-    border-bottom: 1px solid #0056b3;
+    border-bottom: 1px solid #03125f;
   }
   nav .nav-row > ul li:last-child {
     border-bottom: none;
@@ -805,7 +809,7 @@ nav ul {
     padding: 12px 18px;
     font-size: 1.08em;
     background: none;
-    color: #003366 !important;   /* Dark blue links */
+    color: #03125f !important;   /* Dark blue links */
     background: none !important;
     border-radius: 0;
     margin: 0;
@@ -813,7 +817,7 @@ nav ul {
     text-decoration: underline;
   }
   nav .nav-row > ul li .nav-link {
-    color: #003366 !important;   /* Dark blue links */
+    color: #03125f !important;   /* Dark blue links */
     background: none !important;
     text-decoration: underline;
   }
@@ -837,14 +841,13 @@ nav ul {
   }
   .register-box, .login-box {
     background: #fff;
-    color: #007bff;
+    color: #03125f;
     border-radius: 6px;
     padding: 7px 12px;
     margin-left: 6px;
     font-weight: 500;
     cursor: pointer;
     font-size: 15px;
-    border: 1px solid #007bff;
     transition: background 0.2s, color 0.2s;
   }
   .register-box:hover, .login-box:hover {
@@ -853,7 +856,7 @@ nav ul {
   }
   #header-search-icon {
     font-size: 1.3em;
-    color: #041a32;
+    color: #fff;
     background: blue;
     border-radius: 50%;
     padding: 7px;
@@ -864,10 +867,9 @@ nav ul {
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   }
   #header-search-icon:hover {
-    background: #02172d;
+    background: #03125f;
     color: #fff;
     box-shadow: 0 4px 16px rgba(0,123,255,0.12);
-    border-color: #03101d;
   }
   #header-search-form {
     position: absolute;
@@ -897,11 +899,11 @@ nav ul {
     font-size: 1em;
   }
   #header-search-form button {
-    color: #007bff;
+    color: #03125f;
   }
   #header-search-form button:hover {
-    background: #003366;
-    color: #ffc107;
+    background: #03125f;
+    color: #e25b25;
   }
 }
 @media (min-width: 801px) {
@@ -967,7 +969,7 @@ nav ul {
   align-items: stretch;
   animation: modalPop 0.25s cubic-bezier(.4,1.4,.7,1) 1;
 }
-.modal-box h3 { color: #003366;
+.modal-box h3 { color: #03125f;
   text-align: center;
   margin-bottom: 18px;
   font-size: 1.25em;
@@ -978,16 +980,16 @@ nav ul {
   top: 14px;
   right: 18px;
   font-size: 1.6em;
-  color: #003366;
+  color: #03125f;
   cursor: pointer;
   font-weight: bold;
   transition: color 0.2s;
 }
 .modal-close:hover {
-  color: #b00;
+  color: #e25b25;
 }
 .modal-switch-link {
-  color: #007bff;
+  color: #03125f;
   cursor: pointer;
   display: inline-block;
   margin-top: 8px;
@@ -1010,7 +1012,7 @@ nav ul {
 
 .modal-box label {
   font-weight: 600;
-  color: #003366;
+  color: #03125f;
   margin-bottom: 2px;
   font-size: 1em;
   display: flex;
@@ -1018,7 +1020,7 @@ nav ul {
 }
 .modal-box label::after {
   content: " *";
-  color: #b00;
+  color: #e25b25;
   font-size: 1em;
   margin-left: 2px;
 }
@@ -1029,21 +1031,21 @@ nav ul {
 .modal-box input[type="password"] {
   padding: 8px 10px;
   border-radius: 6px;
-  border: 1px solid #b3c6e0;
+  border: 1px solid #03125f;
   font-size: 1em;
   margin-bottom: 2px;
   background: #f4f8fb;
   transition: border 0.2s;
 }
 .modal-box input:focus {
-  border: 1.5px solid #003366;
+  border: 1.5px solid #03125f;
   outline: none;
   background: #e6f2ff;
 }
 
 .modal-box button[type="submit"] {
   margin-top: 10px;
-  background: #003366;
+  background: #03125f;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -1056,12 +1058,12 @@ nav ul {
   transition: background 0.2s, transform 0.2s;
 }
 .modal-box button[type="submit"]:hover {
-  background: #001d4d;
+  background: #03125f;
   transform: translateY(-2px) scale(1.03);
 }
 
 .modal-switch-link {
-  color: #007bff;
+  color: #03125f;
   text-align: center;
   margin-top: 8px;
   cursor: pointer;
@@ -1071,7 +1073,7 @@ nav ul {
   display: block;
 }
 .modal-switch-link:hover {
-  color: #003366;
+  color: #black;
 }
 
 /* Responsive */
@@ -1125,7 +1127,6 @@ nav ul {
 .welcome-info-box {
   background: #e6f2ff;
   border-radius: 0 0 12px 12px;
-  border: 2px solid #007bff;
   border-top: none;
   padding: 18px 16px 14px 16px;
   width: 100%;
@@ -1135,21 +1136,23 @@ nav ul {
 
 .welcome-info-box h2 {
   margin: 0 0 10px 0;
-  font-size: 1.18em;
-  color: #007bff;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
+  color: #03125f;
   background: transparent;
 }
 
 .welcome-info-box p {
   margin: 0;
-  color: #234;
+  color: #03125f;
   font-size: 1em;
 }
 
 .welcome-slide-btn {
   margin: 18px auto 0 auto;
   display: block;
-  background: #007bff;
+  background: #03125f;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -1162,14 +1165,14 @@ nav ul {
   letter-spacing: 1px;
 }
 .welcome-slide-btn:hover {
-  background: #0056b3;
+  background: #020a33;
 }
 
 .welcome-prev, .welcome-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #007bff;
+  background: #03125f;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -1182,7 +1185,7 @@ nav ul {
   transition: background 0.2s, opacity 0.2s;
 }
 .welcome-prev:hover, .welcome-next:hover {
-  background: #0056b3;
+  background: #020a33;
   opacity: 1;
 }
 .welcome-prev { left: 12px; }
@@ -1213,9 +1216,11 @@ nav ul {
 }
 
 .partners h2 {
-  color: #007bff;
+  color: #03125f;
   margin-bottom: 18px;
-  font-size: 1.3em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 
 .partner-list {
@@ -1253,12 +1258,14 @@ nav ul {
 }
 .partner h4 {
   margin: 0 0 8px 0;
-  font-size: 1.08em;
-  color: #007bff;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
+  color: #03125f;
 }
 .partner p {
   margin-top: 8px;
-  color: #234;
+  color: black;
   font-size: 1.04em;
   display: block;
   transition: max-height 0.3s;
@@ -1277,7 +1284,7 @@ nav ul {
 .partner-btn {
   display: block;
   margin: 32px auto 0 auto;
-  background: #003366;
+  background: #03125f;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -1290,7 +1297,7 @@ nav ul {
   transition: background 0.2s, transform 0.2s;
 }
 .partner-btn:hover {
-  background: #001d4d;
+  background: #020a33;
   transform: translateY(-2px) scale(1.03);
 }
 
@@ -1339,7 +1346,9 @@ nav ul {
 .projects h2 {
   color: black;
   margin-bottom: 18px;
-  font-size: 1.3em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .projects p {
   margin-bottom: 18px;
@@ -1384,6 +1393,9 @@ nav ul {
 .about-company h2 {
   color: #e25b25;
   margin-bottom: 12px;
+    font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .about-company p {
   color: #020a33;
@@ -1407,6 +1419,9 @@ nav ul {
   color: #e25b25;
   text-align: center;
   margin-bottom: 18px;
+    font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .vision, .mission, .vision-mission-info {
   margin-bottom: 18px;
@@ -1446,6 +1461,9 @@ nav ul {
   color: #e25b25;
   margin-bottom: 12px;
   text-align: center;
+    font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .major-areas ul {
   list-style: disc inside;
@@ -1519,6 +1537,9 @@ nav ul {
 .leadership h2 {
   color: #e25b25;
   margin-bottom: 18px;
+    font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .leader {
   display: inline-block;
@@ -1533,7 +1554,7 @@ nav ul {
 }
 .leader p {
   margin: 0;
-  color: #234;
+  color: #03125f;
   font-size: 1.05em;
 }
 
@@ -1581,7 +1602,7 @@ a {
   transition: color 0.2s;
 }
 a:hover {
-  color: #0056b3;
+  color: #03125f;
 }
 
 /* --- HEADER --- */
@@ -1610,7 +1631,7 @@ nav ul {
   padding: 0;
 }
 nav ul li a, nav ul li .nav-link {
-  color: #007bff !important;;
+  color: #03125f !important;;
   font-weight: 500;
   font-size: 1.08em;
   padding: 6px 10px;
@@ -1637,13 +1658,13 @@ nav ul li .nav-link:hover {
   transition: color 0.2s;
 }
 .header-icons i:hover {
-  color: #ffc107;
+  color: #03125f;
 }
 
 .header-icons .icon-btn,
 .header-icons .login-btn,
 .header-icons .register-btn {
-  color: #03162a !important;
+  color: #03125f !important;
   font-size: 1.2em;
   cursor: pointer;
   transition: color 0.2s;
@@ -1662,7 +1683,7 @@ button, .btn {
   transition: background 0.2s, color 0.2s;
 }
 button:hover, .btn:hover {
-  background: #0056b3;
+  background: #020a33;
   color: #fff;
 }
 
@@ -1706,6 +1727,9 @@ button:hover, .btn:hover {
   color: #e25b25;
   margin-bottom: 18px;
   letter-spacing: 1px;
+    font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .partner-list {
   display: flex;
@@ -1735,7 +1759,9 @@ button:hover, .btn:hover {
 }
 .partner h4 {
   margin: 0 0 6px 0;
-  font-size: 1em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   color: #e25b25;
 }
 .partner p {
@@ -1805,8 +1831,10 @@ button:hover, .btn:hover {
 }
 .course-box h4 {
   margin: 0 0 8px 0;
-  font-size: 1.08em;
-  color: #007bff;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
+  color: #03125f;
 }
 .course-box p {
   display: none;
@@ -1866,7 +1894,9 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-  font-size: 1.4em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 } */
 .content img.course-logo {
   width: 100%;
@@ -1942,7 +1972,9 @@ button:hover, .btn:hover {
 }
 .course-box h4 {
   margin: 0 0 8px 0;
-  font-size: 1.08em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   color: #e25b25;
 }
 .course-box p {
@@ -2002,7 +2034,9 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-  font-size: 1.4em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .content p {
   color: #234;
@@ -2044,7 +2078,7 @@ button:hover, .btn:hover {
   box-shadow: 0 1px 6px rgba(0,0,0,0.06);
 }
 .team-table thead {
-  background: #007bff;
+  background: #03125f;
   color: #fff;
 }
 .team-table th, .team-table td {
@@ -2107,7 +2141,7 @@ button:hover, .btn:hover {
   .team-table td:before {
     content: attr(data-label);
     font-weight: bold;
-    color: #007bff;
+    color: #03125f;
     display: block;
     margin-bottom: 2px;
   }
@@ -2157,7 +2191,9 @@ button:hover, .btn:hover {
 .content h2 {
   color: #020a33;
   margin-bottom: 14px;
-  font-size: 1.4em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .content p {
   font-size: 16px;
@@ -2205,7 +2241,9 @@ button:hover, .btn:hover {
 }
 .job-box h4 {
   margin: 0 0 8px 0;
-  font-size: 1.08em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   color: #e25b25;
 }
 .job-box p {
@@ -2215,7 +2253,7 @@ button:hover, .btn:hover {
 }
 .job-box button {
   margin-top: 10px;
-  background: #007bff;
+  background: #03125f;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -2228,7 +2266,7 @@ button:hover, .btn:hover {
   letter-spacing: 1px;
 }
 .job-box button:hover {
-  background: #0056b3;
+  background: #03125f;
 }
 
 /* Job Application Form Section */
@@ -2242,7 +2280,7 @@ button:hover, .btn:hover {
   text-align: left;
 }
 #job-application-form h3 {
-  color: #007bff;
+  color: #03125f;
   margin-bottom: 14px;
   text-align: center;
 }
@@ -2268,7 +2306,7 @@ button:hover, .btn:hover {
 }
 #job-application-form button[type="submit"] {
   margin-top: 10px;
-  background: #007bff;
+  background: #03125f;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -2281,7 +2319,7 @@ button:hover, .btn:hover {
   letter-spacing: 1px;
 }
 #job-application-form button[type="submit"]:hover {
-  background: #0056b3;
+  background: #020a33;
 }
 
 /* Responsive Design */
@@ -2320,7 +2358,9 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-  font-size: 1.4em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 .content p {
   color: #234;
@@ -2380,7 +2420,7 @@ button:hover, .btn:hover {
   position: absolute;
   left: 18px;
   top: 18px;
-  background: #007bff;
+  background: #03125f;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -2393,7 +2433,7 @@ button:hover, .btn:hover {
   z-index: 2;
 }
 .gallery-item button:hover {
-  background: #0056b3;
+  background: #020a33;
 }
 
 /* Hidden images grid */
@@ -2454,7 +2494,9 @@ button:hover, .btn:hover {
 .content h2 {
   color: #007bff;
   margin-bottom: 14px;
-  font-size: 1.4em;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 } */
 /* .content p {
   color: #234;
@@ -2613,9 +2655,11 @@ button:hover, .btn:hover {
 }
 
 .text-content h2 {
-  font-size: 28px;
+  font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 20px;
-  color: #333;
+  color: #03125f;
 }
 
 .text-content h2 span {
@@ -2634,7 +2678,7 @@ button:hover, .btn:hover {
 
 .read-more-btn {
   display: inline-block;
-  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  background: linear-gradient(to right, #03125f, #e25b25);
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -2655,7 +2699,6 @@ button:hover, .btn:hover {
   object-fit: cover; /* Ensure the image covers the box without stretching */
   border-radius: 0; /* Remove circular styling */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-  border: 2px solid #ddd; 
 }
 
 /* === Responsive Styles for Mobile View === */
@@ -2671,7 +2714,9 @@ button:hover, .btn:hover {
   }
 
   .text-content h2 {
-    font-size: 22px;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .text-content p {
@@ -2711,20 +2756,22 @@ button:hover, .btn:hover {
 }
 
 .courses-text h2 {
-  font-size: 32px;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 20px;
-  color: #333;
+  color: #03125f;
 }
 
 .courses-text p {
   font-size: 16px;
   line-height: 1.6;
-  color: #555;
+  color: #000;
   margin-bottom: 20px;
 }
 
 .courses-text button {
-  background: linear-gradient(to right, #007BFF, #fdbb2d);
+  background: linear-gradient(to right, #03125f, #e25b25);
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -2735,7 +2782,7 @@ button:hover, .btn:hover {
 }
 
 .courses-text button:hover {
-  background: linear-gradient(to right, #0056b3, #e69e00);
+  background: linear-gradient(to right, #020a33, #e25b25);
 }
 
 .courses-image {
@@ -2750,7 +2797,7 @@ button:hover, .btn:hover {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #f87171, #facc15);
+/*   background: radial-gradient(circle at center, #03125f, #e25b25); */
   padding: 5px;
 }
 
@@ -2762,7 +2809,9 @@ button:hover, .btn:hover {
   }
 
   .courses-text h2 {
-    font-size: 28px;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .courses-text p {
@@ -2808,22 +2857,24 @@ button:hover, .btn:hover {
 }
 
 .projects-text h2 {
-  font-size: 32px;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 20px;
-  color: #333;
+  color: #000;
 }
 
 .projects-text p {
   font-size: 16px;
   line-height: 1.6;
-  color: #555;
+  color: #000;
   margin-bottom: 20px;
   text-indent: 0;
     text-align: justify;
 }
 
 .projects-text button {
-  background: linear-gradient(to right, #007BFF, #fdbb2d);
+  background: linear-gradient(to right, #03125f, #e25b25);
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -2834,7 +2885,7 @@ button:hover, .btn:hover {
 }
 
 .projects-text button:hover {
-  background: linear-gradient(to right, #0056b3, #e69e00);
+  background: linear-gradient(to right, #020a33, #e25b25);
 }
 
 .projects-image {
@@ -2849,7 +2900,7 @@ button:hover, .btn:hover {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #f87171, #facc15);
+/*   background: radial-gradient(circle at center, #f87171, #facc15); */
   padding: 5px;
 }
 
@@ -2861,7 +2912,9 @@ button:hover, .btn:hover {
   }
 
   .projects-text h2 {
-    font-size: 28px;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .projects-text p {
@@ -2909,15 +2962,17 @@ button:hover, .btn:hover {
 }
 
 .text-content h2 {
-  font-size: 28px;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 16px;
-  color: #1a1a1a;
+  color: #03125f;
 }
 
 .text-content p {
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
+  color: #000;
 }
 
 /* .image-content img {
@@ -2936,7 +2991,9 @@ button:hover, .btn:hover {
   }
 
   .text-content h2 {
-    font-size: 24px;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .text-content p {
@@ -2958,7 +3015,9 @@ button:hover, .btn:hover {
   }
 
   .text-content h2 {
-    font-size: 22px;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .text-content p {
@@ -3016,11 +3075,11 @@ button:hover, .btn:hover {
     color: #020a33 !important;
   }
   .custom-header .dropdown-menu {
-    background-color: #004080;
+    background-color: #03125f;
     border: none;
   }
   .custom-header .dropdown-menu a:hover {
-    background-color: #0059b3;
+    background-color: #03125f;
   }
   .header-icons {
     display: flex;
@@ -3036,7 +3095,7 @@ button:hover, .btn:hover {
   .header-icons .login-box {
     cursor: pointer;
     padding: 6px 10px;
-    background-color: #ffcc00;
+    background-color: #03125f;
     color: #000;
     border-radius: 4px;
     font-weight: 600;
@@ -3058,7 +3117,7 @@ button:hover, .btn:hover {
       margin-top: 10px;
     }
     .custom-header .navbar-collapse{
-      background-color: #004080;
+      background-color: #03125f;
       padding: 10px;
     }
     .navbar-toggler {
@@ -3114,7 +3173,7 @@ button:hover, .btn:hover {
   display: inline-block;
   font-size: 1.2rem; /* Adjust font size */
   font-weight: 500;
-  animation: marquee 20s linear infinite; /* Animation for continuous scrolling */
+  animation: marquee 25s linear infinite; /* Animation for continuous scrolling */
   padding-left: 50%; /* Reduce padding to make it reappear faster */
 }
 .marquee-wrapper:hover {
@@ -3159,7 +3218,9 @@ button:hover, .btn:hover {
 }
 
 .footer-logo-section h4 {
-  font-size: 1.2rem;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin: 5px 0;
 }
 
@@ -3204,7 +3265,9 @@ button:hover, .btn:hover {
 }
 
 .footer-map h4 {
-  font-size: 1.2rem;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 10px;
 }
 
@@ -3222,7 +3285,7 @@ button:hover, .btn:hover {
 }
 
 .footer-social-icons a:hover {
-  color: #ffcc00; /* Highlight color on hover */
+  color: #03125f; /* Highlight color on hover */
 }
 
 .footer-bottom {
@@ -3234,7 +3297,7 @@ button:hover, .btn:hover {
 }
 
 .footer-bottom a {
-  color: #ffcc00;
+  color: #03125f;
   text-decoration: none;
 }
 
@@ -3273,7 +3336,9 @@ button:hover, .btn:hover {
 }
 
 .partners1 h2 {
-  font-size: 2rem;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 20px;
 }
 
@@ -3348,7 +3413,7 @@ button:hover, .btn:hover {
 
 .news-item a {
   display: block;
-  color: #007BFF;
+  color: #03125f;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
@@ -3360,7 +3425,9 @@ button:hover, .btn:hover {
 
 .info-column h2 {
   margin-top: 0;
-  font-size: 1.5rem;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
 }
 
 .info-column ul {
@@ -3371,7 +3438,7 @@ button:hover, .btn:hover {
 .info-column button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #03125f;
   color: white;
   border: none;
   border-radius: 4px;
@@ -3380,7 +3447,7 @@ button:hover, .btn:hover {
 }
 
 .info-column button:hover {
-  background-color: #0056b3;
+  background-color: #020a33;
 }
 
 /* ✅ Responsive Styles */
@@ -3401,7 +3468,9 @@ button:hover, .btn:hover {
   }
 
   .info-column h2 {
-    font-size: 1.3rem;
+     font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   }
 
   .info-column ul {
@@ -3452,15 +3521,15 @@ button:hover, .btn:hover {
 }
 
 .team-section1 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #03125f;
 }
 
 .team-section1 p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #000;
   margin-bottom: 30px;
 }
 
@@ -3483,7 +3552,9 @@ button:hover, .btn:hover {
 }
 
 .governing-grid .member h4 {
-  font-size: 1.2rem;
+   font-size: 2rem; 
+   font-weight: bold;
+   text-decoration: underline;
   margin-bottom: 10px;
   color: #020a33;
 }
