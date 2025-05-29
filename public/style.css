@@ -21,7 +21,7 @@ body {
 .navbar-toggler {
   display: block; /* Ensure it is visible in mobile view */
   border: none; /* Remove default border */
- background-color: #03125f; /* Background color for the hamburger */
+ background-color: #fff; /* Background color for the hamburger */
   border: none;
   padding: 8px 12px;
   color: #fff;
